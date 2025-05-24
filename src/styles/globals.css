@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #440B7F;
+  --secondary-color: #221433;
+  --neutral-dark: #000000;
+  --neutral-white: #FFFFFF;
+}
+.app {
+  background-color: white;
+  color: #000;
+  width: 100vw;
+  height: 100dvh;
+}
+
+/* --- FONTS CONFIGURATION ---  */
+
+/* --- NUNITO ---  */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito/Nunito-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* --- DM SANS ---  */
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dm Sans';
+  src: url('../assets/fonts/dm_sans/DMSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
