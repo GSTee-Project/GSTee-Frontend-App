@@ -9,7 +9,7 @@ const UserProfile = () => {
     return (
         <div className={styles.profileSection}>
             <div className={styles.main}>
-                <FaCircleUser size={78} className={styles.userIcon} />
+                <FaCircleUser className={styles.userIcon} />
                 <div>
                     <h3>Tolu James</h3>
                     <p>700 XP</p>
@@ -22,7 +22,7 @@ const UserProfile = () => {
                 <p>Novice Learner</p>
                 <div className={styles.heartContainer}>
                     {Array.from({ length: no_hearts }).map((_, index) => (
-                        <Heart color={'red'} />
+                        <Heart key={index} color={'red'} />
                     ))}
                 </div>
             </div>

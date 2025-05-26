@@ -30,11 +30,16 @@
     gap: 30px;
 }
 
-.navLinks li {
-    list-style-type: none;
+.navLinks a {
+    text-decoration: none;
     font-size: 16px;
     font-weight: 700;
     color: #00000061;
+    cursor: pointer;
+    transition: .2s;
+}
+.navLinks a:hover, .navLinks a.active{
+    color: var(--primary-color);
 }
 
 .bellIcon {
