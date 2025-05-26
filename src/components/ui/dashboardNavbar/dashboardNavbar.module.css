@@ -27,7 +27,7 @@
 .navLinks {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .navLinks li {

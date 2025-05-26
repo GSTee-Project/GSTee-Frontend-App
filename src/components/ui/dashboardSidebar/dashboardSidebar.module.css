@@ -1,6 +1,40 @@
-.sidebar{
+.sidebar {
     width: 100%;
     border-right: 1px solid #00000061;
     height: calc(100dvh - 80px);
     overflow: auto;
+    font-family: 'Nunito';
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #440B7F transparent;
+}
+
+.sidebarMenu {
+    width: 100%;
+    margin: 10px 0 70px;
+}
+
+.sidebarMenu li {
+    list-style-type: none;
+    width: 100%;
+    padding: 15px 12.5%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sidebarMenu li:hover {
+    background-color: #440B7F;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sidebarMenuIcon {
+    font-size: 24px;
 }
