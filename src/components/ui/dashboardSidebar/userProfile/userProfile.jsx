@@ -1,5 +1,5 @@
 import Heart from '../heart/heart';
-import styles from './UserProfile.module.css'
+import styles from './userProfile.module.css'
 import { FaCircleUser } from "react-icons/fa6";
 
 const UserProfile = () => {

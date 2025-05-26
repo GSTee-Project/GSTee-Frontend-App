@@ -1,4 +1,4 @@
-import styles from './DashboardSidebar.module.css'
+import styles from './dashboardSidebar.module.css'
 import UserProfile from './userProfile/userProfile'
 import { RiDashboardLine } from "react-icons/ri";
 import { FaPersonChalkboard } from "react-icons/fa6";
