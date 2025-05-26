@@ -1,8 +1,5 @@
 import styles from './navbar.module.css'
 import logo from '../../../assets/images/Logo-Coloured.svg'
-import { FaRegBell } from "react-icons/fa";
-import { FaCircleUser } from "react-icons/fa6";
-import { IoIosArrowDown } from "react-icons/io";
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
