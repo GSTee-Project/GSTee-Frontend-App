@@ -7,7 +7,7 @@
 
     /* Firefox */
     scrollbar-width: thin;
-    scrollbar-color: #440B7F transparent;
+    scrollbar-color: var(--primary-color) transparent;
 }
 
 .sidebarMenu {
@@ -30,7 +30,7 @@
 }
 
 .sidebarMenu li:hover {
-    background-color: #440B7F;
+    background-color: var(--primary-color);
     color: #fff;
     font-weight: 700;
 }
