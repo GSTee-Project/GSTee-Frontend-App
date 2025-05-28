@@ -6,8 +6,11 @@
     font-family: 'Nunito';
 
     /* Firefox */
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--primary-color) #f4f4f4;
+}
+.sidebar:hover {
+    scrollbar-width: thin;
 }
 
 .sidebarMenu {
