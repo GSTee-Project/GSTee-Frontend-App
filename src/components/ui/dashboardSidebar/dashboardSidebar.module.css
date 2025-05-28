@@ -30,7 +30,12 @@
     text-decoration: none;
 }
 
-.sidebarMenu a:hover, .sidebarMenu a.active {
+.sidebarMenu a:hover{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.sidebarMenu a.active {
     background-color: var(--primary-color);
     color: #fff;
     font-weight: 700;

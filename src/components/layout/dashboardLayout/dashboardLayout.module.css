@@ -7,3 +7,8 @@
     display: grid;
     grid-template-columns: 20% 80%;
 }
+
+.outlet{
+    height: calc(100dvh - 80px);
+    overflow: auto;
+}

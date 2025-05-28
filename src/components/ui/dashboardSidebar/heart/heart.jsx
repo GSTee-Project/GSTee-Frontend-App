@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa6";
 const Heart = ({color}) => {
   return (
     <div>
-        <FaHeart size={20} style={{color: color}} />
+        <FaHeart size={18} style={{color: color}} />
     </div>
   )
 }
