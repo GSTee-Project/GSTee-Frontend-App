@@ -1,121 +1,143 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import {
-    fetchPowerUpsData,
-    purchasePowerUp
-} from '../../../store/powerUpsSlice.js';
-import './PowerUps.module.css';
+import React from 'react';
+import styles from './powerUps.module.css';
 
-const PowerUps = ({ userId }) => {
-    const dispatch = useDispatch();
-    const { data: powerUpsData, loading, purchasingId } = useSelector((state) => state.powerUps);
+const PowerUps = () => {
+    const userCoins = 1800;
+    const inventory = [
+        { id: "shield", name: "Shield", icon: "🛡️", quantity: 1 },
+        { id: "streak_freeze", name: "Streak Freeze", icon: "❄️", quantity: 2 },
+        { id: "timer_boost", name: "Timer Boost", icon: "⏱️", quantity: 3 },
+        { id: "xp_boost", name: "XP Boost", icon: "⚡", quantity: 1 },
+        { id: "heart", name: "Heart", icon: "❤️", quantity: 5 }
+    ];
 
-    useEffect(() => {
-        if (userId) {
-            dispatch(fetchPowerUpsData(userId));
+    const powerUpsStore = [
+        {
+            id: "streak_freeze",
+            name: "Streak Freeze",
+            icon: "❄️",
+            prices: [
+                { label: "1-day", price: 200 },
+                { label: "2-day", price: 400 },
+                { label: "3-day", price: 600 }
+            ]
+        },
+        {
+            id: "shield",
+            name: "Shield",
+            icon: "🛡️",
+            prices: [
+                { label: "1 Piece", price: 150 },
+                { label: "2 Pieces", price: 300 },
+                { label: "3 Pieces", price: 450 }
+            ]
+        },
+        {
+            id: "timer_boost",
+            name: "Timer Boost",
+            icon: "⏱️",
+            prices: [
+                { label: "Single", price: 100 },
+                { label: "5 Pack", price: 450 },
+                { label: "10 Pack", price: 950 }
+            ]
+        },
+        {
+            id: "xp_boost",
+            name: "XP Boost",
+            icon: "⚡",
+            prices: [
+                { label: "Single", price: 300 },
+                { label: "3 Pack", price: 800 },
+                { label: "5 Pack", price: 1200 }
+            ]
+        },
+        {
+            id: "hint_boost",
+            name: "Hint Boost",
+            icon: "💡",
+            prices: [
+                { label: "Single", price: 200 },
+                { label: "5 Pack", price: 400 }
+            ]
+        },
+        {
+            id: "heart",
+            name: "Heart",
+            icon: "❤️",
+            prices: [
+                { label: "Single", price: 50 },
+                { label: "5 Pack", price: 200 },
+                { label: "10 Pack", price: 350 }
+            ]
+        },
+        {
+            id: "turbo_mode",
+            name: "Turbo Mode",
+            icon: "🚀",
+            prices: [
+                { label: "Single", price: 400 },
+                { label: "3 Pack", price: 1000 }
+            ]
         }
-    }, [dispatch, userId]);
+    ];
 
-    const handlePurchase = (powerUpId, quantity, price) => {
-        dispatch(purchasePowerUp({ userId, powerUpId, quantity, price }));
+    const handlePurchase = (powerUpId, option) => {
+        console.log(`Purchasing ${powerUpId} - ${option.label} for ${option.price} coins`);
     };
-
-    const getInventoryQuantity = (powerUpId) => {
-        const item = powerUpsData?.inventory.find((item) => item.id === powerUpId);
-        return item ? item.quantity : 0;
-    };
-
-    const PowerUpCard = ({ powerUp, isInventory = false }) => {
-        const quantity = isInventory ? powerUp.quantity : getInventoryQuantity(powerUp.id);
-
-        return (
-            <div className="powerup-card">
-                <div className="powerup-icon">{powerUp.icon}</div>
-                <div className="powerup-info">
-                    <h4>{powerUp.name}</h4>
-                    {isInventory && <span className="quantity">x {quantity}</span>}
-                </div>
-            </div>
-        );
-    };
-
-    const PurchaseSection = ({ powerUp }) => (
-        <div className="purchase-section">
-            <h3>{powerUp.name}</h3>
-            <div className="purchase-options">
-                {powerUp.prices.map((option, index) => (
-                    <div key={index} className="purchase-option">
-                        <div className="option-info">
-                            <span className="powerup-icon">{powerUp.icon}</span>
-                            <span className="quantity-text">
-                {option.quantity === 1 ? 'Single' : `${option.quantity} Pack`}
-              </span>
-                        </div>
-                        <div className="price-section">
-                            <span className="coin-icon">🪙</span>
-                            <span className="price">{option.price}</span>
-                        </div>
-                        <button
-                            className="buy-button"
-                            onClick={() => handlePurchase(powerUp.id, option.quantity, option.price)}
-                            disabled={
-                                purchasingId === `${powerUp.id}-${option.quantity}` ||
-                                powerUpsData.userCoins < option.price
-                            }
-                        >
-                            {purchasingId === `${powerUp.id}-${option.quantity}` ? 'Buying...' : 'Buy Now'}
-                        </button>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
-
-    if (loading) {
-        return (
-            <div className="powerups-page">
-                <div className="loading-spinner">Loading Power-Ups...</div>
-            </div>
-        );
-    }
-
-    if (!powerUpsData) {
-        return (
-            <div className="powerups-page">
-                <div className="error-message">Failed to load power-ups data</div>
-            </div>
-        );
-    }
 
     return (
-        <div className="powerups-page">
-            <div className="page-header">
+        <div className={styles.powerUpsPage}>
+            <div className={styles.header}>
                 <h1>Power-Ups</h1>
-                <div className="coin-balance">
-                    <span className="coin-icon">🪙</span>
-                    <span className="balance">{powerUpsData.userCoins}</span>
+                <div className={styles.coinBalance}>
+                    <span className={styles.coinIcon}>🪙</span>
+                    <span>{userCoins}</span>
                 </div>
             </div>
 
-            <section className="inventory-section">
+            <div className={styles.myItems}>
                 <h2>My Items</h2>
-                <div className="powerups-grid">
-                    {powerUpsData.inventory.map((item) => (
-                        <PowerUpCard key={item.id} powerUp={item} isInventory={true} />
+                <div className={styles.powerUpGrid}>
+                    {inventory.map((item) => (
+                        <div key={item.id} className={styles.powerUpCard}>
+                            <div className={styles.powerUpIcon}>{item.icon}</div>
+                            <div className={styles.powerUpInfo}>
+                                <h3>{item.name}</h3>
+                                <div className={styles.quantity}>x {item.quantity}</div>
+                            </div>
+                        </div>
                     ))}
-                    {powerUpsData.inventory.length === 0 && (
-                        <div className="empty-inventory">No power-ups in your inventory yet!</div>
-                    )}
                 </div>
-            </section>
+            </div>
 
-            {powerUpsData.store?.length > 0 ? (
-                powerUpsData.store.map((powerUp) => (
-                    <PurchaseSection key={powerUp.id} powerUp={powerUp} />
-                ))
-            ) : (
-                <div className="empty-store">No power-ups available for purchase.</div>
-            )}
+            {powerUpsStore.map((powerUp) => (
+                <div key={powerUp.id} className={styles.shop}>
+                    <div className={styles.shopSection}>
+                        <h3>{powerUp.name}</h3>
+                        <div className={styles.purchaseOptions}>
+                            {powerUp.prices.map((option, index) => (
+                                <div key={index} className={styles.purchaseOption}>
+                                    <div className={styles.optionLeft}>
+                                        <span className={styles.optionIcon}>{powerUp.icon}</span>
+                                        <span className={styles.optionLabel}>{option.label}</span>
+                                    </div>
+                                    <div className={styles.optionRight}>
+                                        <span className={styles.price}>{option.price}</span>
+                                        <button
+                                            className={styles.buyButton}
+                                            onClick={() => handlePurchase(powerUp.id, option)}
+                                            disabled={userCoins < option.price}
+                                        >
+                                            Buy Now
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
     );
 };
