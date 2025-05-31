@@ -1,0 +1,60 @@
+.dailyQuest {
+    margin-top: 30px;
+    padding: 30px 20px;
+    font-family: 'Nunito';
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #00000061;
+}
+
+.dailyQuest h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.quest {
+    display: grid;
+    grid-template-columns: 70px calc(100% - 90px);
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quest img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.quest h4 {
+    font-size: 18px;
+}
+
+.progressBar {
+    margin-top: 10px;
+    width: 100%;
+    height: 26px;
+    background-color: #9C9A9A;
+    /* border: 1px solid #00000061;  */
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.progress {
+    /* width: 50%; */
+    height: 100%;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 20px;
+}
+.progress p{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
