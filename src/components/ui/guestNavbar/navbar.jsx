@@ -6,6 +6,7 @@ import ModalWrapper from '../modalWrapper/modalWrapper';
 import Signup from '../../../pages/guest/auth/signup';
 import Login from '../../../pages/guest/auth/login';
 import ForgotPassword from '../../../pages/guest/auth/forgotPassword';
+import Welcome from '../../../pages/guest/auth/welcome';
 
 const Navbar = () => {
 
@@ -56,6 +57,7 @@ const Navbar = () => {
         {authMode === 'signup' && <Signup changeAuthMode={changeAuthMode} />}
         {authMode === 'login' && <Login changeAuthMode={changeAuthMode} />}
         {authMode === "forgot-password" && <ForgotPassword changeAuthMode={changeAuthMode} />}
+        {authMode === "welcome" && <Welcome onClose={closeModal} />}
       </ModalWrapper>
 
     </div>

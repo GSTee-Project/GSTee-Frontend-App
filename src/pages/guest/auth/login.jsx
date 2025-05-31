@@ -4,13 +4,19 @@ import facebookIcon from '../../../assets/images/facebookIcon.svg'
 import { IoEyeOutline } from "react-icons/io5";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({ changeAuthMode }) => {
 
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
 
     const togglePassword = () => {
         setShowPassword((password) => !password);
+    }
+
+    const login = () => {
+        navigate('/dashboard');
     }
 
     return (
@@ -18,7 +24,7 @@ const Login = ({ changeAuthMode }) => {
             <h3>Login</h3>
             <p>The ultimate gaming learning experience</p>
 
-            <form action="">
+            <form action="" onSubmit={(e) => e.preventDefault()}>
                 <div className={styles.inputBox}>
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" placeholder='Enter your Email' />
@@ -33,7 +39,7 @@ const Login = ({ changeAuthMode }) => {
                     }
                 </div>
                 <span onClick={() => changeAuthMode('forgot-password')}>Forgot Password?</span>
-                <button>Log In</button>
+                <button onClick={login}>Log In</button>
             </form>
             <div className={styles.lineThrough}>
                 <p>or</p>

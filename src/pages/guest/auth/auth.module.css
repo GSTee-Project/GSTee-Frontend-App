@@ -72,7 +72,7 @@
 .content form span:hover{
     text-decoration: underline;
 }
-.content form button{
+.content form button, button.btn{
     width: 100%;
     color: white;
     background-color: var(--primary-color);
@@ -87,9 +87,7 @@
     cursor: pointer;
     transition: .2s;
 }
-.content form button:hover{
-    /* background-color: ; */
-}
+
 .lineThrough{
     width: 100%;
     position: relative;
