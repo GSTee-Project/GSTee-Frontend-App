@@ -1,0 +1,299 @@
+.powerUpsPage {
+  padding: 20px 24px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.coinBalance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 24px;
+  border: 1px solid #e0e0e0;
+  font-weight: 600;
+  color: #333;
+}
+
+.coinIcon {
+  font-size: 18px;
+  color: #ffd700;
+}
+
+.myItems {
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.myItems h2 {
+  margin: 0 0 24px 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.powerUpGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.powerUpCard {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 120px;
+  justify-content: center;
+}
+
+.powerUpCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.powerUpIcon {
+  font-size: 36px;
+  margin-bottom: 8px;
+  filter: grayscale(20%);
+}
+
+.powerUpInfo h3 {
+  margin: 0 0 6px 0;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.quantity {
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.shop {
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.shop:last-child {
+  margin-bottom: 0;
+}
+
+.shopSection {
+  width: 100%;
+}
+
+.shopSection h3 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 24px 16px 24px;
+  border-bottom: 1px solid #f1f3f4;
+  background: #fafafa;
+}
+
+.purchaseOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.purchaseOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border: none;
+  border-bottom: 1px solid #f1f3f4;
+  border-radius: 0;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  min-height: 70px;
+}
+
+.purchaseOption:last-child {
+  border-bottom: none;
+}
+
+.purchaseOption:hover {
+  background-color: #f8f9fa;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.optionLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.optionIcon {
+  font-size: 28px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionLabel {
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+
+.optionRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price {
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  min-width: 80px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price::before {
+  content: "🪙";
+  font-size: 16px;
+}
+
+.buyButton {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 80px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.buyButton:hover {
+  background: #5a6268;
+}
+
+.buyButton:disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #888;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .powerUpsPage {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .myItems {
+    padding: 20px;
+  }
+
+  .powerUpGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .powerUpCard {
+    padding: 16px 12px;
+    min-height: 100px;
+  }
+
+  .shopSection h3 {
+    padding: 16px 20px 12px 20px;
+    font-size: 18px;
+  }
+
+  .purchaseOption {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 16px 20px;
+    min-height: auto;
+  }
+
+  .optionRight {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .optionLeft {
+    justify-content: center;
+  }
+
+  .price {
+    min-width: auto;
+  }
+}

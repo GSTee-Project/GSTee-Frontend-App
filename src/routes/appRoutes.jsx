@@ -4,6 +4,7 @@ import DashboardLayout from '../components/layout/dashboardLayout/dashboardLayou
 import DashboardOverview from '../pages/dashboard/overview/dashboardOverview';
 import GuestLayout from '../components/layout/guestLayout/guestLayout';
 import LevelsAndBadges from '../pages/levelsAndBadges/levelsAndBadges';
+import PowerUps from '../pages/dashboard/powerUps/powerUps';
 
 const AppRoutes = () => {
     return (
@@ -20,7 +21,7 @@ const AppRoutes = () => {
                     <Route path='my-courses' element={<>my courses</>} />
                     <Route path='play-games' element={<>play games</>} />
                     <Route path='levels&badges' element={<LevelsAndBadges/>} />
-                    <Route path='power-ups' element={<>power ups</>} />
+                    <Route path='power-ups' element={<PowerUps/>} />
                     <Route path='leaderboard' element={<>leaderboard</>} />
                     <Route path='help' element={<>help</>} />
                     <Route path='report-bug' element={<>report bug</>} />
