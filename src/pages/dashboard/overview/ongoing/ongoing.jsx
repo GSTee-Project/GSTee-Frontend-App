@@ -3,7 +3,7 @@ import styles from './ongoing.module.css'
 import lessonImg from '../../../../assets/images/lesson_image.jpg'
 import cupStarImg from '../../../../assets/images/cup-star.svg'
 import streak from '../../../../assets/images/streak.svg'
-import splash from '../../../../assets/images/splash.svg'
+// import splash from '../../../../assets/images/splash.svg'
 
 
 const Ongoing = () => {

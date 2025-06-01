@@ -1,9 +1,8 @@
 .powerUpsPage {
-  padding: 20px 24px;
+  padding: 37px 5.7%;
   max-width: 100%;
   width: 100%;
   margin: 0;
-  background-color: #f8f9fa;
   min-height: 100vh;
   flex: 1;
 }
@@ -12,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
   padding: 0;
   background: transparent;
   border-radius: 0;
@@ -21,8 +19,8 @@
 
 .header h1 {
   margin: 0;
-  color: #333;
-  font-size: 32px;
+  color: #000000;
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -44,16 +42,11 @@
 }
 
 .myItems {
-  margin-bottom: 40px;
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 65px;
 }
 
 .myItems h2 {
-  margin: 0 0 24px 0;
-  color: #333;
+  color: #000000;
   font-size: 24px;
   font-weight: 600;
 }
