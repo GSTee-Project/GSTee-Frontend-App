@@ -6,12 +6,14 @@ import styles from './dashboardLayout.module.css'
 const DashboardLayout = () => {
   return (
     <div className={styles.layout}>
-        <DashboardNavbar />
-        <div className={styles.contentSection}>
-            <DashboardSidebar />
-            <Outlet />
+      <DashboardNavbar />
+      <div className={styles.contentSection}>
+        <DashboardSidebar />
+        <div className={styles.outlet}>
+          <Outlet />
         </div>
-        
+      </div>
+
     </div>
   )
 }

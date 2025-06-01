@@ -6,8 +6,11 @@
     font-family: 'Nunito';
 
     /* Firefox */
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--primary-color) #f4f4f4;
+}
+.sidebar:hover {
+    scrollbar-width: thin;
 }
 
 .sidebarMenu {
@@ -30,7 +33,12 @@
     text-decoration: none;
 }
 
-.sidebarMenu a:hover, .sidebarMenu a.active {
+.sidebarMenu a:hover{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.sidebarMenu a.active {
     background-color: var(--primary-color);
     color: #fff;
     font-weight: 700;

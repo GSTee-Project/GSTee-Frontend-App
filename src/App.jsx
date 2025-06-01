@@ -1,13 +1,13 @@
-import AppRoutes from './routes/appRoutes'
-import './styles/globals.css'
+import AppRoutes from './routes/appRoutes';
+import './styles/globals.css';
 
 function App() {
 
-  return (
-    <div className='app'>
-      <AppRoutes />
-    </div>
-  )
+    return (
+        <div className='app'>
+            <AppRoutes />
+        </div>
+    )
 }
 
-export default App
+export default App;
