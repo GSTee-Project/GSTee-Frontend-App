@@ -1,6 +1,6 @@
 import DashboardPageHeader from "../../../components/ui/dashboardPageHeader/dashboardPageHeader"
 import DailyQuest from "./dailyQuest/dailyQuest"
-import styles from './dashboardoverview.module.css'
+import styles from './dashboardOverview.module.css'
 import Leaderboard from "./leaderboard/leaderboard"
 import Ongoing from "./ongoing/ongoing"
 import UnlockBadges from "./unlockBadges/unlockBadges"
