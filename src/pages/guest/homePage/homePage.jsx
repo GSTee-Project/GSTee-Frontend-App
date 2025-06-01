@@ -18,7 +18,7 @@ import Footer from '../../../components/ui/guestFooter/guestFooter';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className={styles.home_page}>
       <section className={styles.hero_section}>
         <div>
           <h1>Learn. Play. Level Up!</h1>

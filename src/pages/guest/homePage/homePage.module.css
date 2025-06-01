@@ -17,15 +17,15 @@ body{
 }
 
 /*headers*/
-h2{
+.home_page h2{
     font-size: 3.4rem;
     font-weight: 700;
     line-height: 80px;
 }
-h3{
+.home_page h3{
     font-size: 2.2rem;
 }
-h4{
+.home_page h4{
     font-size: 1.2rem;
     font-weight: 800;
 }
