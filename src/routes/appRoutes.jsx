@@ -10,18 +10,13 @@ const AppRoutes = () => {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<GuestLayout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path='about' element={<>About page</>} />
-                    <Route path='features' element={<>Features page</>} />
-                    <Route path='contact-us' element={<>Contact Us page</>} />
-                </Route>
+                <Route path='/' element={<HomePage />} />
                 <Route path='/dashboard' element={<DashboardLayout />}>
                     <Route index element={<DashboardOverview />} />
                     <Route path='my-courses' element={<>my courses</>} />
                     <Route path='play-games' element={<>play games</>} />
-                    <Route path='levels&badges' element={<LevelsAndBadges/>} />
-                    <Route path='power-ups' element={<PowerUps/>} />
+                    <Route path='levels&badges' element={<LevelsAndBadges />} />
+                    <Route path='power-ups' element={<PowerUps />} />
                     <Route path='leaderboard' element={<>leaderboard</>} />
                     <Route path='help' element={<>help</>} />
                     <Route path='report-bug' element={<>report bug</>} />

@@ -1,23 +1,22 @@
 import styles from './navbar.module.css'
 import logo from '../../../assets/images/Logo-Coloured.svg'
-import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect, useState } from 'react';
 import ModalWrapper from '../modalWrapper/modalWrapper';
 import Signup from '../../../pages/guest/auth/signup';
 import Login from '../../../pages/guest/auth/login';
 import ForgotPassword from '../../../pages/guest/auth/forgotPassword';
 import Welcome from '../../../pages/guest/auth/welcome';
+import ContactUs from '../../../pages/guest/homePage/contactUs/contactUs';
 
-const Navbar = () => {
+const Navbar = ({ activeSection, scrollToTop }) => {
 
-  const location = useLocation();
+  const [currentLink, setCurrentLink] = useState('#home');
 
-  const paths = [
-    '/',
-    '/about',
-    '/features',
-    '/contact-us'
-  ];
+
+  useEffect(() => {
+    setCurrentLink(activeSection);
+  }, [activeSection])
 
   const [authMode, setAuthMode] = useState(null);
   const [open, setOpen] = useState(null);
@@ -36,17 +35,20 @@ const Navbar = () => {
   }
 
 
+
   return (
     <div className={styles.navbar}>
       <div className={styles.smallContainer}>
         <img src={logo} alt="" />
       </div>
+
       <div className={styles.navLinks}>
-        <Link to={paths[0]} className={location.pathname === paths[0] ? styles.active : ''}>Home</Link>
-        <Link to={paths[1]} className={location.pathname === paths[1] ? styles.active : ''}>About</Link>
-        <Link to={paths[2]} className={location.pathname === paths[2] ? styles.active : ''}>Features</Link>
-        <Link to={paths[3]} className={location.pathname === paths[3] ? styles.active : ''}>Contact Us</Link>
+        <Link onClick={scrollToTop} className={currentLink === '#home' ? styles.active : ''}>Home</Link>
+        <Link to='/#about' onClick={() => setCurrentLink('#about')} className={currentLink === '#about' ? styles.active : ''}>About</Link>
+        <Link to='/#features' onClick={() => setCurrentLink('#features')} className={currentLink === '#features' ? styles.active : ''}>Features</Link>
+        <Link onClick={() => openModal('contact')}>Contact Us</Link>
       </div>
+
       <div className={styles.smallContainer}>
         <button onClick={() => openModal('login')}>Login</button>
         <button onClick={() => openModal('signup')}>Sign Up</button>
@@ -58,6 +60,7 @@ const Navbar = () => {
         {authMode === 'login' && <Login changeAuthMode={changeAuthMode} />}
         {authMode === "forgot-password" && <ForgotPassword changeAuthMode={changeAuthMode} />}
         {authMode === "welcome" && <Welcome onClose={closeModal} />}
+        {authMode === "contact" && <ContactUs onClose={closeModal} /> }
       </ModalWrapper>
 
     </div>

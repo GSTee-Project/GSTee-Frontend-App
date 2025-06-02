@@ -21,12 +21,12 @@ const Signup = ({ changeAuthMode }) => {
             <form action="">
                 <div className={styles.twoInputBox}>
                     <div style={{ width: '48%' }} className={styles.inputBox}>
-                        <label htmlFor="email">First name</label>
-                        <input type="email" name="email" id="email" placeholder='Enter your name' />
+                        <label htmlFor="firstName">First name</label>
+                        <input type="text" name="firstNamE" id="firstName" placeholder='Enter your name' />
                     </div>
                     <div style={{ width: '48%' }} className={styles.inputBox}>
-                        <label htmlFor="email">Last name</label>
-                        <input type="email" name="email" id="email" placeholder='Enter your name' />
+                        <label htmlFor="lastName">Last name</label>
+                        <input type="name" name="lastName" id="lastName" placeholder='Enter your name' />
                     </div>
                 </div>
                 <div className={styles.inputBox}>

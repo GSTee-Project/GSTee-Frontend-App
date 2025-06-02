@@ -7,6 +7,9 @@
     border-bottom: 1px solid #00000061;
     padding: 15px 2%;
     font-family: 'Nunito';
+    position: fixed;
+    z-index: 500;
+    background-color: white;
 }
 
 .smallContainer {
