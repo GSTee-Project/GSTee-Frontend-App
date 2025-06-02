@@ -83,37 +83,32 @@ const HomePage = () => {
               experiences instead of traditional lectures.
             </p>
           </div>
+          <div className={styles.gstee_overflow_container}>
+            <div className={styles.gstee_container}>
+              <div>
+                <img src={game} alt="game-icon" />
+                <h3>Gamified Learning</h3>
+                <p>Learn through quizzes and interactive modules</p>
+              </div>
 
-          <div className={styles.gstee_container}>
-            <div>
-              <img src={game} alt="game-icon" />
-              <h3>Gamified Learning</h3>
-              <p>Learn through quizzes and interactive modules</p>
+              <div>
+                <img src={achievement} alt="trophy-icon" />
+                <h3>Unlock Achievements</h3>
+                <p>Collect badges as you hit milestones</p>
+              </div>
+
+              <div>
+                <img src={progress} alt="hourglass-icon" />
+                <h3>Track Progress</h3>
+                <p>View your learning stats in one place</p>
+              </div>
+
+              <div>
+                <img src={leaderboard} alt="leaderboard-icon" />
+                <h3>Leaderboard</h3>
+                <p>See how you rank against other learners</p>
+              </div>
             </div>
-
-            <div>
-              <img src={achievement} alt="trophy-icon" />
-              <h3>Unlock Achievements</h3>
-              <p>Collect badges as you hit milestones</p>
-            </div>
-
-            <div>
-              <img src={progress} alt="hourglass-icon" />
-              <h3>Track Progress</h3>
-              <p>View your learning stats in one place</p>
-            </div>
-
-            <div>
-              <img src={leaderboard} alt="leaderboard-icon" />
-              <h3>Leaderboard</h3>
-              <p>See how you rank against other learners</p>
-            </div>
-
-            {/*<div>
-            <img src="" alt="" />
-            <h3>Topic Challenges</h3>
-            <p>Compete in weekly themed challenges</p>
-          </div>*/}
           </div>
         </section>
 

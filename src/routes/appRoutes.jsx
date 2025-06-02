@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/guest/homePage/homePage';
 import DashboardLayout from '../components/layout/dashboardLayout/dashboardLayout';
 import DashboardOverview from '../pages/dashboard/overview/dashboardOverview';
-import GuestLayout from '../components/layout/guestLayout/guestLayout';
 import LevelsAndBadges from '../pages/levelsAndBadges/levelsAndBadges';
 import PowerUps from '../pages/dashboard/powerUps/powerUps';
 
