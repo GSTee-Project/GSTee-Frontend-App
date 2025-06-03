@@ -9,14 +9,13 @@ import { MdOutlineLeaderboard } from "react-icons/md";
 import { MdHelpOutline } from "react-icons/md";
 import { PiBugDroidBold } from "react-icons/pi";
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 const DashboardSidebar = () => {
 
   const location = useLocation();
 
   const paths = ['/dashboard', '/dashboard/my-courses', '/dashboard/play-games', '/dashboard/levels&badges', 
-    '/dashboard/power-ups', '/dashboard/leaderboard', '/dashboard/help', '/dashboard/report-bug']
+    '/dashboard/power-ups', '/dashboard/leaderboard', '/dashboard/help-center', '/dashboard/report-bug']
 
   return (
     <div className={styles.sidebar}>
