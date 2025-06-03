@@ -4,6 +4,7 @@ import DashboardLayout from '../components/layout/dashboardLayout/dashboardLayou
 import DashboardOverview from '../pages/dashboard/overview/dashboardOverview';
 import LevelsAndBadges from '../pages/levelsAndBadges/levelsAndBadges';
 import PowerUps from '../pages/dashboard/powerUps/powerUps';
+import Account_SettingsLayout from '../components/layout/account_SettingsLayout/account_settingsLayout';
 
 const AppRoutes = () => {
     return (
@@ -17,8 +18,12 @@ const AppRoutes = () => {
                     <Route path='levels&badges' element={<LevelsAndBadges />} />
                     <Route path='power-ups' element={<PowerUps />} />
                     <Route path='leaderboard' element={<>leaderboard</>} />
-                    <Route path='help' element={<>help</>} />
-                    <Route path='report-bug' element={<>report bug</>} />
+                    <Route path='edit-profile' element={<Account_SettingsLayout menu={'Profile'} />} />
+                    <Route path='preferences' element={<Account_SettingsLayout menu={'Preferences'} />} />
+                    <Route path='notifications' element={<Account_SettingsLayout menu={'Notifications'} />} />
+                    <Route path='privacy-settings' element={<Account_SettingsLayout menu={'Privacy Settings'} />} />
+                    <Route path='help-center' element={<Account_SettingsLayout menu={'Help Center'} />} />
+                    <Route path='report-bug' element={<Account_SettingsLayout menu={'Report Bug'} />} />
                 </Route>
             </Routes>
         </Router>
