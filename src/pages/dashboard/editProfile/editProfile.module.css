@@ -1,0 +1,144 @@
+.page h3 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.userIcon {
+    color: #00000061;
+    margin-top: 35px;
+    font-size: 180px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form .formGroup {
+    font-family: 'Inter';
+    margin-bottom: 25px;
+}
+
+.formGroup label {
+    font-weight: 500;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.formGroup input {
+    width: 100%;
+    border: 1px solid #00000061;
+    font-family: 'Inter';
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    outline: none;
+}
+.formGroup input:focus{
+    border: 1.5px solid var(--primary-color);
+}
+
+.form button {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    font-family: 'Inter';
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p.delete {
+    text-align: center;
+    color: #EA4335;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1366px) {
+    .page h3 {
+        font-size: 32px;
+    }
+
+    .userIcon {
+        font-size: 150px;
+    }
+
+    .form {
+        margin-top: 40px;
+    }
+
+    .form .formGroup {
+        margin-bottom: 25px;
+    }
+
+    .formGroup label {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .formGroup input {
+        padding: 15px 10px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .form button {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    p.delete {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .page h3 {
+        font-size: 28px;
+    }
+
+    .userIcon {
+        font-size: 130px;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+
+    .form .formGroup {
+        margin-bottom: 25px;
+    }
+
+    .formGroup label {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .formGroup input {
+        padding: 15px 10px;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+
+    .form button {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    p.delete {
+        font-size: 17px;
+    }
+}
