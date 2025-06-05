@@ -1,0 +1,80 @@
+section{
+    margin-top: 2em;
+}
+.notifications_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications_header h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.notifications_header p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.notifications_container{
+    border: 1.5px solid #00000080;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.notifications{
+    padding: 1em;
+}
+
+.notifications:not(:last-child) {
+  border-bottom: 1px solid #00000080;
+}
+
+.user_profile, .notification_message{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification_message{
+    justify-content: space-between;
+}
+
+.notification_message p{
+    font-weight: 800;
+}
+
+.user_profile h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.user_profile p{
+    font-weight: 400;
+    color:#00000080;
+}
+
+.reactionImg {
+  width: 60px;
+  height: 60px;
+}
+
+.reactionSmall {
+  width: 40px;
+  height: 40px;
+}
+
+.notification_btn{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 13px 15px 13px 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: var(--neutral-white);
+    cursor: pointer;
+}
