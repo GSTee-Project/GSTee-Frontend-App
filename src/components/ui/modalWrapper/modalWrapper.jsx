@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 
 const ModalWrapper = ({ open, onClose, width = '550px', children }) => {
     return (
-        <Dialog open={open} onClose={onClose} scroll="body" fullWidth sx={{ '& .MuiDialog-paper': { width: width, }, }} className={styles.modal}>
+        <Dialog open={open} onClose={onClose} scroll="body" fullWidth sx={{ '& .MuiDialog-paper': { width: width, minWidth: '550px'}, }} className={styles.modal}>
             <DialogTitle>
                 <IconButton onClick={onClose} sx={{ position: 'absolute', top: 8, right: 8 }}>
                     <IoClose className={styles.closeIcon} size={20} />
