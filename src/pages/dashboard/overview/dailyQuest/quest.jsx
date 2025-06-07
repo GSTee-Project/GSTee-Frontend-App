@@ -4,8 +4,6 @@ const Quest = ({image, text, currentValue, totalValue}) => {
 
     var width = (Number(currentValue)/Number(totalValue))*100;
 
-    console.log(width);
-
   return (
     <div className={styles.quest}>
         <img src={image} alt="" />

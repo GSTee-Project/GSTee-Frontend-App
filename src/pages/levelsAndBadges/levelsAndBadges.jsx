@@ -8,6 +8,7 @@ import { TbShieldCheckeredFilled } from "react-icons/tb";
 import { SlSpeedometer } from "react-icons/sl";
 import { RiSwordLine } from "react-icons/ri";
 import { IoIosLock } from "react-icons/io";
+import DashboardPageHeader from "../../components/ui/dashboardPageHeader/dashboardPageHeader";
 // import Button from '@mui/material/Button';
 
 const LevelsAndBadges = () => {
@@ -50,16 +51,7 @@ const LevelsAndBadges = () => {
   return (
     <div className={styles.main}>
       <div className="">
-        <div className={styles.flex}>
-          <h3 className={styles.title}>Your Journey So Far</h3>
-          <div className={`${styles.flex} ${styles.pointsDiv}`}>
-            <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 6.36683L25 11.9835V23.0168L15 28.6335L5.00001 23.0168V11.9835L15 6.36683ZM30 25.0002C30 25.6335 29.65 26.1835 29.1167 26.4668L15.95 33.8668C15.6833 34.0668 15.35 34.1668 15 34.1668C14.65 34.1668 14.3167 34.0668 14.05 33.8668L0.883343 26.4668C0.616022 26.3266 0.392307 26.1156 0.236556 25.857C0.0808042 25.5984 -0.00101379 25.302 9.48188e-06 25.0002V10.0002C9.48188e-06 9.36683 0.350009 8.81683 0.883343 8.5335L14.05 1.1335C14.3167 0.933496 14.65 0.833496 15 0.833496C15.35 0.833496 15.6833 0.933496 15.95 1.1335L29.1167 8.5335C29.65 8.81683 30 9.36683 30 10.0002V25.0002ZM15 4.41683L3.33334 10.9835V24.0168L15 30.5835L26.6667 24.0168V10.9835L15 4.41683Z" fill="#0866FF" />
-            </svg>
-            <span className={styles.points}>1800</span>
-          </div>
-        </div>
-        <p className={styles.desc}>Track your levels, earn badges, and celebrate your growth</p>
+        <DashboardPageHeader headText="Your Journey So Far" smallText="Track your levels, earn badges, and celebrate your growth" g_coin={1800} />
       </div>
       
       {/* Progress Level Section */}
