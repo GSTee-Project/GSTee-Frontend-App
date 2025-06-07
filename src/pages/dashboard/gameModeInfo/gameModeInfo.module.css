@@ -1,0 +1,139 @@
+.page {
+    padding: 40px 6%;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header h3 {
+
+    font-size: 36px;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+
+.backIcon {
+    color: var(--primary-color);
+    font-size: 38px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: .15s;
+    padding: 3px;
+}
+.backIcon:hover{
+    background-color: #bbb;
+}
+
+.info {
+    margin-bottom: 50px;
+}
+
+.info h4 {
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.info p,
+.info li {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1336px) {
+    .page {
+        padding: 30px 6%;
+    }
+
+    .header {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .header h3 {
+        font-size: 32px;
+    }
+
+    .backIcon {
+        color: var(--primary-color);
+        font-size: 38px;
+        position: absolute;
+        left: 0;
+    }
+
+    .info {
+        margin-bottom: 40px;
+    }
+
+    .info h4 {
+        color: var(--primary-color);
+        font-size: 28px;
+        font-weight: 700;
+        font-family: 'Nunito';
+    }
+
+    .info p,
+    .info li {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .info li {
+        margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .header h3 {
+        font-size: 28px;
+    }
+
+    .backIcon {
+        color: var(--primary-color);
+        font-size: 34px;
+        position: absolute;
+        left: 0;
+    }
+
+    .info {
+        margin-bottom: 30px;
+    }
+
+    .info h4 {
+        color: var(--primary-color);
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Nunito';
+    }
+
+    .info p,
+    .info li {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .info li {
+        margin-bottom: 5px;
+    }
+
+}

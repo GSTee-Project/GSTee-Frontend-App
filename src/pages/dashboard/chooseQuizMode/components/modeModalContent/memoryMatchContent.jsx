@@ -5,10 +5,13 @@ import { useState } from 'react';
 import bulbImg from '../../../../../assets/images/bulbIcon.svg'
 import clockImg from '../../../../../assets/images/clockIcon.svg'
 import skipImg from '../../../../../assets/images/skipIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 const MemoryMatchContent = () => {
 
     const [currentMode, setCurrentMode] = useState(1);
+
+    const navigate = useNavigate();
 
     return (
         <div className={styles.content}>
@@ -28,7 +31,7 @@ const MemoryMatchContent = () => {
                         Hard
                     </div>
                 </div>
-                <img src={modalImg} alt="" />
+                <img src={modalImg} onClick={() => navigate('/dashboard/play-games/memory-match-info')} alt="" />
             </div>
             <div className={styles.midText}>
                 <p>Match all GST question-answer pairs <br />  correctly with the fewest moves. </p>

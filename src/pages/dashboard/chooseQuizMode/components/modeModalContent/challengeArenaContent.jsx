@@ -5,10 +5,13 @@ import { useState } from 'react';
 import bulbImg from '../../../../../assets/images/bulbIcon.svg'
 import clockImg from '../../../../../assets/images/clockIcon.svg'
 import skipImg from '../../../../../assets/images/skipIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 const ChallengeArenaContent = () => {
 
     const [currentMode, setCurrentMode] = useState(1);
+
+    const navigate = useNavigate();
 
     return (
         <div className={styles.content}>
@@ -28,7 +31,7 @@ const ChallengeArenaContent = () => {
                         Hard
                     </div>
                 </div>
-                <img src={modalImg} alt="" />
+                <img src={modalImg} onClick={() => navigate('/dashboard/play-games/challenge-arena-info')} alt="" />
             </div>
             <div className={styles.midText}>
                 <p>Survive all 5 levels and collect stars per <br /> level. </p>

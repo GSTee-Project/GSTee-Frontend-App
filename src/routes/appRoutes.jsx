@@ -6,6 +6,7 @@ import LevelsAndBadges from '../pages/levelsAndBadges/levelsAndBadges';
 import PowerUps from '../pages/dashboard/powerUps/powerUps';
 import Account_SettingsLayout from '../components/layout/account_SettingsLayout/account_settingsLayout';
 import ChooseQuizMode from '../pages/dashboard/chooseQuizMode/chooseQuizMode';
+import GameModeInfo from '../pages/dashboard/gameModeInfo/gameModeInfo';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,10 @@ const AppRoutes = () => {
                     <Route index element={<DashboardOverview />} />
                     <Route path='my-courses' element={<>my courses</>} />
                     <Route path='play-games' element={<ChooseQuizMode />} />
+                    <Route path='play-games/quick-quiz-info' element={<GameModeInfo index={0} />} />
+                    <Route path='play-games/battle-mode-info' element={<GameModeInfo index={1} />} />
+                    <Route path='play-games/memory-match-info' element={<GameModeInfo index={2} />} />
+                    <Route path='play-games/challenge-arena-info' element={<GameModeInfo index={3} />} />
                     <Route path='levels&badges' element={<LevelsAndBadges />} />
                     <Route path='power-ups' element={<PowerUps />} />
                     <Route path='leaderboard' element={<>leaderboard</>} />

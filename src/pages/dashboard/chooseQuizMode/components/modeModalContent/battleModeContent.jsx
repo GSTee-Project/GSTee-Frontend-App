@@ -5,10 +5,13 @@ import { useState } from 'react';
 import bulbImg from '../../../../../assets/images/bulbIcon.svg'
 import clockImg from '../../../../../assets/images/clockIcon.svg'
 import skipImg from '../../../../../assets/images/skipIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 const BattleModeContent = () => {
 
     const [currentMode, setCurrentMode] = useState(1);
+
+    const navigate = useNavigate();
 
     return (
         <div className={styles.content}>
@@ -28,7 +31,7 @@ const BattleModeContent = () => {
                         Hard
                     </div>
                 </div>
-                <img src={modalImg} alt="" />
+                <img src={modalImg} onClick={() => navigate('/dashboard/play-games/battle-mode-info')} alt="" />
             </div>
             <div className={styles.midText}>
                 <p>Score more points than your opponent <br /> before time/lives run out.</p>

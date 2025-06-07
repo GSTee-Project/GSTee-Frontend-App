@@ -5,10 +5,13 @@ import { useState } from 'react';
 import bulbImg from '../../../../../assets/images/bulbIcon.svg'
 import clockImg from '../../../../../assets/images/clockIcon.svg'
 import skipImg from '../../../../../assets/images/skipIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 const QuickQuizContent = () => {
 
     const [currentMode, setCurrentMode] = useState(1);
+
+    const navigate = useNavigate();
 
     return (
         <div className={styles.content}>
@@ -28,7 +31,7 @@ const QuickQuizContent = () => {
                         Hard
                     </div>
                 </div>
-                <img src={modalImg} alt="" />
+                <img src={modalImg} onClick={() => navigate('/dashboard/play-games/quick-quiz-info')} alt="" />
             </div>
             <div className={styles.midText}>
                 <p>You’ll answer 10 multiple choice questions. <br /> Try to get all correct as fast as you can.</p>

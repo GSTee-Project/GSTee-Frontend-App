@@ -11,6 +11,16 @@
 
 }
 
+.questionIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    z-index: 200;
+    font-size: 36px;
+    cursor: pointer;
+}
+
 .imageContainer::after {
     width: 100%;
     height: 100%;
@@ -72,6 +82,10 @@
 
     }
 
+    .questionIcon {
+        font-size: 33px;
+    }
+
     .imageContainer::after {
         width: 100%;
         height: 100%;
@@ -120,7 +134,8 @@
         border: none;
     }
 }
-@media screen and (max-width: 1336px) {
+
+@media screen and (max-width: 1280px) {
 
 
     .imageContainer {
@@ -129,6 +144,11 @@
         position: relative;
 
     }
+
+    .questionIcon {
+        font-size: 30px;
+    }
+
 
     .imageContainer::after {
         width: 100%;
