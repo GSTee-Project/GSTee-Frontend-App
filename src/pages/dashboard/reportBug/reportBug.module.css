@@ -1,0 +1,242 @@
+.bugReportContainer {
+  font-family: 'Nunito', sans-serif;
+  background-color: #ffffff;
+}
+
+.bugReportTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.bugReportForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formLabel {
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formTextarea {
+  padding: 20px;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
+  resize: none;
+  background-color: #f8f9fa;
+}
+
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.formSelect {
+  padding: 20px;
+  border: 1px solid #00000061;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
+  background-color: #ffffff;
+  cursor: pointer;
+  appearance: none;
+}
+
+.formSelect:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.formDateInput {
+  padding: 20px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
+  background-color: #ffffff;
+}
+
+.formDateInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.radioOption input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.radioText {
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+  font-family: 'Inter';
+}
+
+@media screen and (max-width: 1336px) {
+
+  .bugReportTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .bugReportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formLabel {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .formTextarea {
+    padding: 20px;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    resize: none;
+    background-color: #f8f9fa;
+  }
+
+  .formSelect {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .formDateInput {
+    padding: 20px;
+    border: 1px solid #00000080;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+
+  .radioText {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .submitButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    font-family: 'Inter';
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .bugReportTitle {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .bugReportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .formLabel {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .formTextarea {
+    padding: 20px;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 17px;
+    resize: none;
+    background-color: #f8f9fa;
+  }
+
+  .formSelect {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .formDateInput {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+  }
+
+  .radioText {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .submitButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    font-family: 'Inter';
+  }
+
+}

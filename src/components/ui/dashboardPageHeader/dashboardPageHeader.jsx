@@ -1,6 +1,6 @@
-import GCoin from '../gCoin/gCoin';
-import Heart from '../heart/heart';
-import Streak from '../streak/streak';
+import GCoin from '../items/gCoin';
+import Heart from '../items/heart';
+import Streak from '../items/streak';
 import styles from './dashboardPageHeader.module.css';
 
 const DashboardPageHeader = ({ headText = 'Welcome back James', smallText = '', g_coin, streak, heart }) => {
@@ -11,9 +11,9 @@ const DashboardPageHeader = ({ headText = 'Welcome back James', smallText = '', 
                 {smallText && <p>{smallText}</p>}
             </div>
             <div className={styles.right}>
-                <GCoin value={g_coin} />
-                <Streak value={streak} />
-                <Heart value={heart} />
+                {g_coin && <GCoin value={g_coin} />}
+                {streak && <Streak value={streak} />}
+                {heart && <Heart value={heart} />}
             </div>
         </div>
     )

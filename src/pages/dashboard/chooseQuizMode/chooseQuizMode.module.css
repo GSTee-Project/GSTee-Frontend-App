@@ -1,0 +1,12 @@
+.page{
+    padding: 40px 6%;
+}
+.container{
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(2, 46.5%); */
+    grid-template-columns: repeat(2, calc(50% - 25px));
+    column-gap: 50px;
+    margin-top: 30px;
+    row-gap: 50px;
+}

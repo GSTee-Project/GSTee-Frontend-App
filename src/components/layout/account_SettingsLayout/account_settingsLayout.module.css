@@ -1,25 +1,30 @@
-.layout{
+.layout {
     display: grid;
     grid-template-columns: 60.5% 35%;
     column-gap: 4.5%;
     padding: 30px 3%;
 }
-.sidebarSection{
+
+.sidebarSection {
     width: 100%;
 }
-.sidebarContainer{
+
+.sidebarContainer {
     width: 100%;
     border: 1px solid #00000080;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 30px;
 }
-.sidebarContainer h3{
+
+.sidebarContainer h3 {
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 20px;
+    font-size: 32px;
 }
-.sidebarContainer p{
+
+.sidebarContainer p {
     font-family: 'Dm Sans';
     font-weight: 500;
     color: #000000;
@@ -29,25 +34,59 @@
     border-radius: 10px;
     cursor: pointer;
     transition: .15s;
+    font-size: 24px;
 }
-.sidebarContainer p:hover{
+
+.sidebarContainer p:hover {
     color: var(--primary-color);
 }
-.sidebarContainer p.active{
+
+.sidebarContainer p.active {
     color: white;
     background-color: var(--primary-color);
 
 }
-button.btn{
+
+button.btn {
     border: 1px solid #00000061;
     border-radius: 10px;
     background-color: transparent;
     color: #EA4335;
     font-weight: 500;
     padding: 20px;
-    font-size: 16px;
+    font-size: 24px;
     width: 100%;
 }
-.children{
+
+.children {
     width: 100%;
+}
+
+@media screen and (max-width: 1336px) {
+    .sidebarContainer h3 {
+        font-size: 28px;
+    }
+
+    .sidebarContainer p {
+        font-size: 20px;
+    }
+
+    button.btn {
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 1280px) {
+    .sidebarContainer h3 {
+        font-size: 24px;
+    }
+
+    .sidebarContainer p {
+        font-size: 16px;
+    }
+
+    button.btn {
+        font-size: 16px;
+    }
+
 }
