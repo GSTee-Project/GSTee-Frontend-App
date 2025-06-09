@@ -7,6 +7,8 @@ import PowerUps from '../pages/dashboard/powerUps/powerUps';
 import Account_SettingsLayout from '../components/layout/account_SettingsLayout/account_settingsLayout';
 import ChooseQuizMode from '../pages/dashboard/chooseQuizMode/chooseQuizMode';
 import GameModeInfo from '../pages/dashboard/gameModeInfo/gameModeInfo';
+import LeaderBoard from '../pages/leaderboard/leaderboard';
+
 
 const AppRoutes = () => {
     return (
@@ -23,7 +25,7 @@ const AppRoutes = () => {
                     <Route path='play-games/challenge-arena-info' element={<GameModeInfo index={3} />} />
                     <Route path='levels&badges' element={<LevelsAndBadges />} />
                     <Route path='power-ups' element={<PowerUps />} />
-                    <Route path='leaderboard' element={<>leaderboard</>} />
+                    <Route path='leaderboard' element={<LeaderBoard g_coin={1800} streak={7} heart={5}/>} />
                     <Route path='edit-profile' element={<Account_SettingsLayout menu={'Profile'} />} />
                     <Route path='preferences' element={<Account_SettingsLayout menu={'Preferences'} />} />
                     <Route path='notifications' element={<Account_SettingsLayout menu={'Notifications'} />} />
