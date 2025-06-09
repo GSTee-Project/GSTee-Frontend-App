@@ -1,0 +1,220 @@
+.radiobtn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid #000000;
+    background-color: transparent;
+}
+
+#active {
+    background-color: var(--primary-color);
+}
+
+.content {
+    padding: 60px 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 33%;
+    cursor: pointer;
+}
+
+.header .chooseContainer h3 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Nunito';
+    margin-bottom: 15px;
+}
+
+.chooseRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Nunito';
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.midText {
+    text-align: center;
+    margin: 45px auto 25px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Nunito';
+}
+
+.lowerContainer {
+    padding: 40px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 4%;
+}
+
+.lowerContainer .box {
+    margin-bottom: 30px;
+}
+
+.box h4 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.boxContent {
+    margin-left: -2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.content button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 18px 43px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 20px;
+    width: 70%;
+    display: block;
+    margin: 40px auto 20px;
+}
+
+@media screen and (max-width: 1336px) {
+    .radiobtn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content {
+        padding: 50px 20px;
+    }
+
+    .header .chooseContainer h3 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .chooseRow {
+        gap: 10px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .midText {
+        margin: 35px auto 20px;
+        font-size: 22px;
+    }
+
+    .lowerContainer {
+        padding: 30px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+    }
+
+    .lowerContainer .box {
+        margin-bottom: 30px;
+    }
+
+    .box h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .boxContent {
+        margin-left: -2px;
+        gap: 10px;
+        font-size: 22px;
+    }
+
+    .flexBox {
+        gap: 20px;
+    }
+
+    .content button {
+        padding: 18px 43px;
+        border-radius: 8px;
+        font-size: 20px;
+        width: 70%;
+        margin: 20px auto 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .radiobtn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content {
+        padding: 40px 15px;
+    }
+
+    .header .chooseContainer h3 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .chooseRow {
+        gap: 10px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .midText {
+        margin: 25px auto 15px;
+        font-size: 20px;
+    }
+
+    .lowerContainer {
+        padding: 25px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 4%;
+    }
+
+    .lowerContainer .box {
+        margin-bottom: 30px;
+    }
+
+    .box h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .boxContent {
+        margin-left: -2px;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .flexBox {
+        gap: 20px;
+    }
+
+    .content button {
+        padding: 18px 43px;
+        border-radius: 8px;
+        font-size: 18px;
+        width: 70%;
+        margin: 10px auto 10px;
+    }
+}
