@@ -1,15 +1,13 @@
 import { useState } from 'react';
-import GCoin from '../../components/ui/gCoin/gCoin';
-import Heart from '../../components/ui/heart/heart';
-import Streak from '../../components/ui/streak/streak';
 import styles from './leaderboard.module.css';
-import UnlockBadges from '../dashboard/overview/unlockBadges/unlockBadges';
+import UnlockBadges from '../../dashboard/overview/unlockBadges/unlockBadges';
 import Notifications from './notifications/notifications';
 import GlobalLeaderboard from './globalLeaderboard/globalLeaderboard';
 import FriendsLeaderboard from './friendsLeaderboard/friendsLeaderboard';
 import UniversityLeaderboard from './universityLeaderboard/universityLeaderboard';
+import DashboardPageHeader from '../../../components/ui/dashboardPageHeader/dashboardPageHeader';
 
-const LeaderBoard = ({ g_coin, streak, heart }) => {
+const LeaderBoard = () => {
   const [activeLeaderboard, setActiveLeaderboard] = useState('global');
 
   const switchLeaderboard = () => {
@@ -24,8 +22,8 @@ const LeaderBoard = ({ g_coin, streak, heart }) => {
   };
 
   return (
-    <>
-      <header className={styles.leaderboard_header}>
+    <div className={styles.page}>
+      {/* <header className={styles.leaderboard_header}>
         <div>
           <h1>GSTee Champions!</h1>
         </div>
@@ -34,7 +32,9 @@ const LeaderBoard = ({ g_coin, streak, heart }) => {
           <Streak value={streak} />
           <Heart value={heart} />
         </div>
-      </header>
+      </header> */}
+
+      <DashboardPageHeader headText='GSTee Champions!' g_coin={1800} streak={7} heart={5} />
 
       <main className={styles.leaderboard_overview}>
         <section>
@@ -66,12 +66,12 @@ const LeaderBoard = ({ g_coin, streak, heart }) => {
           <div>
             <UnlockBadges />
           </div>
-          <div>
+          <div style={{marginTop: '30px'}}>
             <Notifications />
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 };
 

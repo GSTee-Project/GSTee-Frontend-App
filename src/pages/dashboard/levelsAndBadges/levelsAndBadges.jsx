@@ -1,5 +1,5 @@
 import styles from "../levelsAndBadges/levelsAndBadges.module.css";
-import LinearProgressBar from "../../components/ui/linearProgressBar/linearProgressBar";
+import LinearProgressBar from "../../../components/ui/linearProgressBar/linearProgressBar";
 import { AiOutlineSync } from "react-icons/ai";
 import { FaClock } from "react-icons/fa6";
 import { IoFlagSharp, IoFootsteps } from "react-icons/io5";
@@ -8,8 +8,8 @@ import { TbShieldCheckeredFilled } from "react-icons/tb";
 import { SlSpeedometer } from "react-icons/sl";
 import { RiSwordLine } from "react-icons/ri";
 import { IoIosLock } from "react-icons/io";
-import DashboardPageHeader from "../../components/ui/dashboardPageHeader/dashboardPageHeader";
-// import Button from '@mui/material/Button';
+import DashboardPageHeader from "../../../components/ui/dashboardPageHeader/dashboardPageHeader";
+
 
 const LevelsAndBadges = () => {
 

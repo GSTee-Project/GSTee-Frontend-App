@@ -26,7 +26,7 @@ const ReportBug = () => {
   return (
     <div className={styles.bugReportContainer}>
       <h2 className={styles.bugReportTitle}>Report a Bug</h2>
-      
+
       <form onSubmit={handleSubmit} className={styles.bugReportForm}>
         <div className={styles.formGroup}>
           <label className={styles.formLabel}>What issue did you experience?</label>
@@ -36,7 +36,7 @@ const ReportBug = () => {
             onChange={handleInputChange}
             className={styles.formTextarea}
             placeholder="Describe the issue you encountered..."
-            rows={4}
+            rows={6}
           />
         </div>
 
@@ -83,7 +83,7 @@ const ReportBug = () => {
               />
               <span className={styles.radioText}>Low (Minor issue)</span>
             </label>
-            
+
             <label className={styles.radioOption}>
               <input
                 type="radio"
@@ -94,7 +94,7 @@ const ReportBug = () => {
               />
               <span className={styles.radioText}>Medium (Interrupts my study)</span>
             </label>
-            
+
             <label className={styles.radioOption}>
               <input
                 type="radio"

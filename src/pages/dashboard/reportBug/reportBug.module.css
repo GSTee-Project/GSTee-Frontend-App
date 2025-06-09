@@ -1,23 +1,18 @@
 .bugReportContainer {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #ffffff;
 }
 
 .bugReportTitle {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333333;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 30px;
-  margin-top: 0;
 }
 
 .bugReportForm {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 40px;
 }
 
 .formGroup {
@@ -27,56 +22,55 @@
 }
 
 .formLabel {
-  font-size: 16px;
-  font-weight: 500;
-  color: #555555;
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
   margin-bottom: 5px;
 }
 
 .formTextarea {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 14px;
-  font-family: inherit;
-  resize: vertical;
-  min-height: 100px;
+  padding: 20px;
+  border: 1.5px solid transparent;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
+  resize: none;
   background-color: #f8f9fa;
 }
 
 .formTextarea:focus {
   outline: none;
-  border-color: #007bff;
-  background-color: #ffffff;
+  border-color: var(--primary-color);
 }
 
 .formSelect {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 14px;
-  font-family: inherit;
+  padding: 20px;
+  border: 1px solid #00000061;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
   background-color: #ffffff;
   cursor: pointer;
+  appearance: none;
 }
 
 .formSelect:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--primary-color);
 }
 
 .formDateInput {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 14px;
-  font-family: inherit;
+  padding: 20px;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Inter';
   background-color: #ffffff;
 }
 
 .formDateInput:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--primary-color);
 }
 
 .radioGroup {
@@ -101,38 +95,148 @@
 }
 
 .radioText {
-  font-size: 14px;
-  color: #555555;
+  font-size: 24px;
+  font-weight: 400;
   cursor: pointer;
 }
 
 .submitButton {
-  background-color: #666666;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 24px;
   font-weight: 500;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.2s ease;
+  font-family: 'Inter';
 }
 
-.submitButton:hover {
-  background-color: #555555;
-}
+@media screen and (max-width: 1336px) {
 
-.submitButton:active {
-  background-color: #444444;
-}
-
-@media (max-width: 600px) {
-  .bugReportContainer {
-    padding: 15px;
-  }
-  
   .bugReportTitle {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .bugReportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formLabel {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .formTextarea {
+    padding: 20px;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    resize: none;
+    background-color: #f8f9fa;
+  }
+
+  .formSelect {
+    padding: 20px;
     font-size: 20px;
   }
+
+  .formDateInput {
+    padding: 20px;
+    border: 1px solid #00000080;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+
+  .radioText {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .submitButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    font-family: 'Inter';
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .bugReportTitle {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .bugReportForm {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .formLabel {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .formTextarea {
+    padding: 20px;
+    border: 1.5px solid transparent;
+    border-radius: 10px;
+    font-size: 17px;
+    resize: none;
+    background-color: #f8f9fa;
+  }
+
+  .formSelect {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .formDateInput {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+  }
+
+  .radioText {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .submitButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+    font-family: 'Inter';
+  }
+
 }

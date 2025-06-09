@@ -1,16 +1,16 @@
-import TopCandidate from '../../dashboard/overview/leaderboard/topCandidate';
-import user1 from '../../../assets/images/leaderboard_img1.jpg';
-import user2 from '../../../assets/images/leaderboard_img2.jpg';
-import user3 from '../../../assets/images/leaderboard_img3.jpg';
-import user4 from '../../../assets/images/leaderboard_img4.jpg';
-import user5 from '../../../assets/images/leaderboard_img5.jpg';
-import user6 from '../../../assets/images/leaderboard_img6.jpg';
-import user7 from '../../../assets/images/leaderboard_img3.jpg';
-import user8 from '../../../assets/images/leaderboard_img3.jpg';
-import user9 from '../../../assets/images/leaderboard_img3.jpg';
-import user10 from '../../../assets/images/leaderboard_img3.jpg';
+import TopCandidate from '../../../dashboard/overview/leaderboard/topCandidate';
+import user1 from '../../../../assets/images/leaderboard_img1.jpg';
+import user2 from '../../../../assets/images/leaderboard_img2.jpg';
+import user3 from '../../../../assets/images/leaderboard_img3.jpg';
+import user4 from '../../../../assets/images/leaderboard_img4.jpg';
+import user5 from '../../../../assets/images/leaderboard_img5.jpg';
+import user6 from '../../../../assets/images/leaderboard_img6.jpg';
+import user7 from '../../../../assets/images/leaderboard_img3.jpg';
+import user8 from '../../../../assets/images/leaderboard_img3.jpg';
+import user9 from '../../../../assets/images/leaderboard_img3.jpg';
+import user10 from '../../../../assets/images/leaderboard_img3.jpg';
 
-const GlobalLeaderboard = () => {
+const UniversityLeaderboard = () => {
     const leaderboard = [
         {rank: 1, userImage: user1, userName: 'Helen', xp: '1561'},
         {rank: 2, userImage: user2, userName: 'Joshua', xp: '1402'},
@@ -41,4 +41,4 @@ const GlobalLeaderboard = () => {
     );
 }
 
-export default GlobalLeaderboard;
+export default UniversityLeaderboard;
