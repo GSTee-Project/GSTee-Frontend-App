@@ -9,6 +9,7 @@
     scrollbar-width: none;
     scrollbar-color: var(--primary-color) #f4f4f4;
 }
+
 .sidebar:hover {
     scrollbar-width: thin;
 }
@@ -18,7 +19,7 @@
     margin: 10px 0 70px;
 }
 
-.sidebarMenu a{
+.sidebarMenu a {
     list-style-type: none;
     width: 100%;
     padding: 15px 12.5%;
@@ -31,9 +32,10 @@
     cursor: pointer;
     transition: .2s;
     text-decoration: none;
+    font-size: 20px;
 }
 
-.sidebarMenu a:hover{
+.sidebarMenu a:hover {
     color: var(--primary-color);
     font-weight: 700;
 }
@@ -46,4 +48,15 @@
 
 .sidebarMenuIcon {
     font-size: 24px;
+}
+
+@media screen and (max-width: 1336px) {
+    .sidebarMenu a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .sidebarMenu a {
+        font-size: 16px;
+    }
 }
