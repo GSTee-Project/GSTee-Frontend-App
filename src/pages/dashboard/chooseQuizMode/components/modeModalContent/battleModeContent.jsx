@@ -66,7 +66,7 @@ const BattleModeContent = () => {
                     </div>
                 </div>
             </div>
-            <button>Start Now</button>
+            <button  onClick={() => navigate('/games/battle-mode')}>Start Now</button>
         </div>
     )
 }

@@ -66,7 +66,7 @@ const QuickQuizContent = () => {
                     </div>
                 </div>
             </div>
-            <button>Start Now</button>
+            <button onClick={() => navigate('/games/quick-quiz')}>Start Now</button>
         </div>
     )
 }

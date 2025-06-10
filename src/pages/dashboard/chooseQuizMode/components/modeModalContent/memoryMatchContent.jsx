@@ -66,7 +66,7 @@ const MemoryMatchContent = () => {
                     </div>
                 </div>
             </div>
-            <button>Start Now</button>
+            <button onClick={() => navigate('/games/memory-match')}>Start Now</button>
         </div>
     )
 }

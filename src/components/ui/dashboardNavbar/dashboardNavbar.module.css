@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.smallContainer:last-child {
+.smallContainer.left {
     justify-content: flex-end;
 }
 

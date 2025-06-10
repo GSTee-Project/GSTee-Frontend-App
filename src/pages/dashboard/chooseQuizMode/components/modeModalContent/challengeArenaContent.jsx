@@ -66,7 +66,7 @@ const ChallengeArenaContent = () => {
                     </div>
                 </div>
             </div>
-            <button>Start Now</button>
+            <button  onClick={() => navigate('/games/challenge-arena')}>Start Now</button>
         </div>
     )
 }
