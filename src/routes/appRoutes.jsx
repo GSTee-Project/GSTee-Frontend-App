@@ -9,6 +9,7 @@ import GameModeInfo from '../pages/dashboard/gameModeInfo/gameModeInfo';
 import LeaderBoard from '../pages/dashboard/leaderboard/leaderboard';
 import LevelsAndBadges from '../pages/dashboard/levelsAndBadges/levelsAndBadges';
 import Power_Ups from '../pages/dashboard/power_ups/power_ups';
+import GameLayout from '../components/layout/gameLayout/gameLayout';
 
 
 const AppRoutes = () => {
@@ -26,13 +27,21 @@ const AppRoutes = () => {
                     <Route path='play-games/challenge-arena-info' element={<GameModeInfo index={3} />} />
                     <Route path='levels&badges' element={<LevelsAndBadges />} />
                     <Route path='power-ups' element={<Power_Ups />} />
-                    <Route path='leaderboard' element={<LeaderBoard g_coin={1800} streak={7} heart={5}/>} />
+                    <Route path='leaderboard' element={<LeaderBoard g_coin={1800} streak={7} heart={5} />} />
                     <Route path='edit-profile' element={<Account_SettingsLayout menu={'Profile'} />} />
                     <Route path='preferences' element={<Account_SettingsLayout menu={'Preferences'} />} />
                     <Route path='notifications' element={<Account_SettingsLayout menu={'Notifications'} />} />
                     <Route path='privacy-settings' element={<Account_SettingsLayout menu={'Privacy Settings'} />} />
                     <Route path='help-center' element={<Account_SettingsLayout menu={'Help Center'} />} />
                     <Route path='report-bug' element={<Account_SettingsLayout menu={'Report Bug'} />} />
+                </Route>
+
+                {/* --- games section --- */}
+                <Route path='/games' element={<GameLayout />}>
+                    <Route path='quick-quiz' element={<>Quick Quiz</>} />
+                    <Route path='battle-mode' element={<>Battle Mode</>} />
+                    <Route path='memory-match' element={<>Memory Match</>} />
+                    <Route path='challenge-arena' element={<>Challenge Arena</>} />
                 </Route>
             </Routes>
         </Router>
