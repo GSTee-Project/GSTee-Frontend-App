@@ -1,0 +1,28 @@
+.searchBox {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.searchBox input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 18px;
+    border: 1px solid #0000000D;
+    background-color: #0000000D;
+    font-weight: 300;
+    font-family: 'Nunito';
+    outline: green;
+}
+.searchBox input:focus{
+    border-width: 1.5px;
+    border-color: var(--primary-color);
+}
+
+.searchIcon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+}

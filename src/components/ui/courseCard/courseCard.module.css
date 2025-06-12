@@ -1,0 +1,47 @@
+.card{
+    background-color: #FFFFFF66;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.cardContent{
+    padding: 20px;
+}
+.cardContent h4{
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.flex > div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    color: #00000080;
+    font-size: 15px;
+}
+.cardContent button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: .2s;
+    font-size: 16px;
+    background-color: #FFFFFF66;
+}
+.cardContent button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}

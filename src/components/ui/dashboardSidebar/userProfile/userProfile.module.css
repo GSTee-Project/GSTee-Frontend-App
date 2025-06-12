@@ -14,12 +14,12 @@
 
 .main>div>h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 3px;
 }
 
 .main>div>p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #00000080;
     margin-bottom: 5px;
@@ -27,7 +27,7 @@
 
 .userIcon {
     color: #00000061;
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .progress-bar {
@@ -62,58 +62,6 @@
 
 .lowerSection p {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
     color: #00000080;
-}
-
-@media screen and (max-width: 1336px) {
-    .main>div>h3 {
-        font-weight: 700;
-        font-size: 21px;
-        margin-bottom: 3px;
-    }
-
-    .main>div>p {
-        font-size: 15px;
-        font-weight: 600;
-        color: #00000080;
-        margin-bottom: 5px;
-    }
-
-    .userIcon {
-        color: #00000061;
-        font-size: 75px;
-    }
-
-    .lowerSection p {
-        font-weight: 700;
-        font-size: 18px;
-        color: #00000080;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .main>div>h3 {
-        font-weight: 700;
-        font-size: 18px;
-        margin-bottom: 3px;
-    }
-
-    .main>div>p {
-        font-size: 14px;
-        font-weight: 600;
-        color: #00000080;
-        margin-bottom: 5px;
-    }
-
-    .userIcon {
-        color: #00000061;
-        font-size: 70px;
-    }
-
-    .lowerSection p {
-        font-weight: 700;
-        font-size: 17px;
-        color: #00000080;
-    }
 }

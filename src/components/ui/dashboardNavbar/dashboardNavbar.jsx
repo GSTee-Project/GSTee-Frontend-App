@@ -11,6 +11,8 @@ const DashboardNavbar = ({ showMenu = true }) => {
 
   const paths = [
     '/dashboard',
+    '/dashboard/play-games',
+    '/dashboard/courses',
     '/dashboard/levels&badges',
     '/dashboard/power-ups'
   ]
@@ -23,10 +25,10 @@ const DashboardNavbar = ({ showMenu = true }) => {
       {showMenu &&
         <div className={styles.navLinks}>
           <Link to={paths[0]} className={location.pathname === paths[0] ? styles.active : ''}>Dashboard</Link>
-          <Link>Game Modes</Link>
-          <Link>Courses</Link>
-          <Link to={paths[1]} className={location.pathname === paths[1] ? styles.active : ''}>Levels & Badges</Link>
-          <Link to={paths[2]} className={location.pathname === paths[2] ? styles.active : ''}>Power-Ups</Link>
+          <Link to={paths[1]} className={location.pathname === paths[1] ? styles.active : ''}>Game Modes</Link>
+          <Link to={paths[2]} className={location.pathname.includes(paths[2]) ? styles.active : ''}>Courses</Link>
+          <Link to={paths[3]} className={location.pathname === paths[3] ? styles.active : ''}>Levels & Badges</Link>
+          <Link to={paths[4]} className={location.pathname === paths[4] ? styles.active : ''}>Power-Ups</Link>
         </div>}
       {showMenu &&
         <div className={`${styles.smallContainer} ${styles.left}`}>
