@@ -18,14 +18,14 @@ const Courses = () => {
       hourNo: '15'
     },
     {
-      id: 1,
+      id: 2,
       image: courseImg,
       title: 'Use of English & communicaion skills I',
       lessonNo: '15',
       hourNo: '15'
     },
     {
-      id: 1,
+      id: 3,
       image: courseImg,
       title: 'Use of English & communicaion skills II',
       lessonNo: '15',
@@ -35,21 +35,21 @@ const Courses = () => {
 
   const all_courses = [
     {
-      id: 1,
+      id: 4,
       image: courseImg,
       title: 'Computer Fundamentals',
       lessonNo: '1/15',
       hourNo: '15'
     },
     {
-      id: 1,
+      id: 5,
       image: courseImg,
       title: 'Use of English & communicaion skills I',
       lessonNo: '2/15',
       hourNo: '15'
     },
     {
-      id: 1,
+      id: 6,
       image: courseImg,
       title: 'Use of English & communicaion skills II',
       lessonNo: '3/15',
@@ -69,7 +69,7 @@ const Courses = () => {
         </div>
         <div className={styles.cardContainer}>
           {popular_courses.map((course, index) => (
-            <CourseCard key={index} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
+            <CourseCard key={index} id={course.id} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
           ))}
         </div>
 
@@ -79,7 +79,7 @@ const Courses = () => {
         </div>
         <div className={styles.cardContainer}>
           {all_courses.map((course, index) => (
-            <CourseCard key={index} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
+            <CourseCard key={index} id={course.id} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
           ))}
         </div>
       </div>

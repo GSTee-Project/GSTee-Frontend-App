@@ -1,0 +1,149 @@
+.page{
+    padding: 40px 8%;
+}
+.page header{
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.page header .back{
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    padding: 5px;
+    transition: .2s;
+}
+.page header .back:hover{
+    background-color: #aaa;
+}
+.page header h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+.contentBox{
+    width: 100%;
+    background-color: #420B7F33;
+    padding: 80px 17%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 400px;
+    user-select: none;
+}
+.topCornerBox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    top: 20px;
+    right: 20px;
+}
+.heartBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.contentBox h4, .contentBox p{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.contentBox h4{
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.bottomNavigation{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.arrowBox{
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    border: 1.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.arrowBox.disabled{
+    background-color: #440B7F80;
+    border-color: #A185BF;
+    cursor: not-allowed;
+}
+.arrowBox.finish{
+    padding: 9px 15px;
+    width: fit-content;
+    aspect-ratio: auto;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    border: 1.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 16px;
+}
+.arrowIcon{
+    font-size: 22px;
+    color: white;
+}
+.bottomNavigation p{
+    font-size: 22px;
+    font-weight: 700;
+    user-select: none;
+}
+.modalContent{
+    padding: 60px 10px;
+    text-align: center;
+}
+.modalContent img{
+    width: 160px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+.modalContent h3{
+    font-size: 48px;
+    font-weight: 400;
+}
+.modalContent p{
+    font-family: 'Dm Sans';
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.modalContent p span{
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+.modalContent button{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 500;
+    cursor: pointer;
+}

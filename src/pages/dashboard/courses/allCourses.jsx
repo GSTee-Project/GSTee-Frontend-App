@@ -60,7 +60,7 @@ const AllCourses = () => {
       <div className={styles.container}>
         <div className={styles.cardContainer}>
           {all_courses.map((course, index) => (
-            <CourseCard key={index} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
+            <CourseCard key={index} id={course.id} image={course.image} title={course.title} lessonNo={course.lessonNo} hourNo={course.hourNo} />
           ))}
         </div>
       </div>

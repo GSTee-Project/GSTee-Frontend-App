@@ -1,0 +1,70 @@
+.page{
+    padding: 30px;
+}
+.page header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.page header h3{
+    font-size: 25px;
+}
+.page header p{
+    font-family: 'Dm Sans';
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+p.description{
+    width: 60%;
+    font-weight: 500;
+    font-family: 'Dm Sans';
+    color: #00000080;
+}
+p.description span{
+    color: #000000B2;
+    cursor: pointer;
+}
+.lessonContainer{
+    margin-top: 60px;
+    background-color: #F6F3F9;
+    padding: 40px 20px;
+    border-radius: 16px;
+}
+.lessonContainer > h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.singleLesson{
+    width: 100%;
+    padding: 25px 40px;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.singleLesson h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.singleLesson .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #00000080;
+    font-weight: 500;
+    font-size: 17px;
+}
+.right p.completed{
+    font-weight: 700;
+    color: #008000;
+}
