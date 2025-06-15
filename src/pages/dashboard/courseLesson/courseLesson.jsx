@@ -132,12 +132,12 @@ const CourseLesson = () => {
         </div>
       </div>
 
-      <ModalWrapper open={openModal} onClose={() => setOpenModal(false)} width='600px'>
+      <ModalWrapper open={openModal} onClose={() => setOpenModal(false)} width='600px' showCloseBtn={false}>
         <div className={styles.modalContent}>
           <img src={celebrationImg} alt="" />
           <h3>Congratuations!</h3>
           <p>Lesson completed, you earned <span>15XP</span></p>
-          <button>Play Game</button>
+          <button onClick={() => navigate('game')}>Play Game</button>
         </div>
       </ModalWrapper>
     </div>
