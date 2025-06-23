@@ -18,6 +18,7 @@
 
 .smallContainer.left {
     justify-content: flex-end;
+    position: relative;
 }
 
 .smallContainer img {
@@ -46,6 +47,11 @@
 
 .bellIcon {
     margin-right: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+.bellIcon:hover, .bellIcon.purple {
+    color: var(--primary-color);
 }
 
 .userIcon {
@@ -54,6 +60,29 @@
 
 .arrowIcon {
     color: #00000061;
+    cursor: pointer;
+    transition: .2s;
+}
+.arrowIcon:hover{
+    color: var(--primary-color);
+}
+
+.dropDownBox{
+    position: absolute;
+    top: 130%;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 150px;
+}
+.dropDownBox p{
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .15s;
+}
+.dropDownBox p:hover{
+    background-color: #eee;
 }
 
 @media screen and (max-width: 1336px) {

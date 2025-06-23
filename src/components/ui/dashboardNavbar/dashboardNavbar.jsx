@@ -3,11 +3,13 @@ import logo from '../../../assets/images/Logo-Coloured.svg'
 import { FaRegBell } from "react-icons/fa";
 import { FaCircleUser } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const DashboardNavbar = ({ showMenu = true }) => {
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   const paths = [
     '/dashboard',
@@ -17,8 +19,14 @@ const DashboardNavbar = ({ showMenu = true }) => {
     '/dashboard/power-ups'
   ]
 
+  const [showDropDown, setShowDropDown] = useState(false);
+
+  const toggleDropDown = () => {
+    setShowDropDown(showDropDown => !showDropDown);
+  }
+
   return (
-    <div className={styles.navbar}>
+    <div className={styles.navbar} onClick={() => {if (showDropDown) setShowDropDown(false)}}>
       <div className={styles.smallContainer}>
         <img src={logo} alt="" />
       </div>
@@ -32,9 +40,15 @@ const DashboardNavbar = ({ showMenu = true }) => {
         </div>}
       {showMenu &&
         <div className={`${styles.smallContainer} ${styles.left}`}>
-          <FaRegBell size={22} className={styles.bellIcon} />
+          <FaRegBell size={22} className={`${styles.bellIcon} ${location.pathname === '/dashboard/notifications' && styles.purple}`} onClick={() => navigate('/dashboard/notifications')} />
           <FaCircleUser size={36} className={styles.userIcon} />
-          <IoIosArrowDown size={22} className={styles.arrowIcon} />
+          <IoIosArrowDown size={22} className={styles.arrowIcon} style={{transform: showDropDown ? 'rotate(-180deg)': 'rotate(0deg)'}} onClick={toggleDropDown} />
+          {showDropDown &&
+            <div className={styles.dropDownBox}>
+              <p onClick={() => navigate('/dashboard/profile')}>Profile</p>
+              <p onClick={() => navigate('/dashboard/edit-profile')}>Account</p>
+              <p>Logout</p>
+            </div>}
         </div>}
 
     </div>

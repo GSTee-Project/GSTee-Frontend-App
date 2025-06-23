@@ -19,6 +19,7 @@ import OngoingCourses from '../pages/dashboard/my-courses/ongoingCourses';
 import PopularCourses from '../pages/dashboard/courses/popularCourses';
 import AllCourses from '../pages/dashboard/courses/allCourses';
 import LessonGame from '../pages/dashboard/courseLesson/lessonGame/lessonGame';
+import Profile from '../pages/dashboard/profile/profile';
 
 
 const AppRoutes = () => {
@@ -51,6 +52,7 @@ const AppRoutes = () => {
                     <Route path='levels&badges' element={<LevelsAndBadges />} />
                     <Route path='power-ups' element={<Power_Ups />} />
                     <Route path='leaderboard' element={<LeaderBoard />} />
+                    <Route path='profile' element={<Profile />} />
                     <Route path='edit-profile' element={<Account_SettingsLayout menu={'Profile'} />} />
                     <Route path='preferences' element={<Account_SettingsLayout menu={'Preferences'} />} />
                     <Route path='notifications' element={<Account_SettingsLayout menu={'Notifications'} />} />

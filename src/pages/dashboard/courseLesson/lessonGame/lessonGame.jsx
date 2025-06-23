@@ -24,82 +24,52 @@ const LessonGame = () => {
     const questions = [
         {
             question: 'What is the capital of Nigeria?',
-            optionA: 'Lagos',
-            optionB: 'Port Harcourt',
-            optionC: 'Abuja',
-            optionD: 'Kano',
+            options: ['Lagos', 'Port Harcourt', 'Abuja', 'Kano'],
             answer: 'Abuja',
         },
         {
             question: 'What is the capital of Lagos?',
-            optionA: 'Ikorodu',
-            optionB: 'Ikeja',
-            optionC: 'Apapa',
-            optionD: 'Victoria Island',
+            options: ['Ikorodu', 'Ikeja', 'Apapa', 'Victoria Island'],
             answer: 'Ikeja',
         },
         {
             question: 'What is the capital of Ondo?',
-            optionA: 'Akoko',
-            optionB: 'Ondo East',
-            optionC: 'Ifedore',
-            optionD: 'Akure',
+            options: ['Akoko', 'Ondo East', 'Ifedore', 'Akure'],
             answer: 'Akure',
         },
         {
             question: 'What is the capital of Oyo?',
-            optionA: 'Ibadan',
-            optionB: 'Ogbomosho',
-            optionC: 'Lagelu',
-            optionD: 'Akinyele',
+            options: ['Ibadan', 'Ogbomosho', 'Lagelu', 'Akinyele'],
             answer: 'Ibadan',
         },
         {
             question: 'What is the capital of Sokoto?',
-            optionA: 'Bodinga',
-            optionB: 'Sokoto',
-            optionC: 'Wamako',
-            optionD: 'Yabo',
+            options: ['Bodinga', 'Sokoto', 'Wamako', 'Yabo'],
             answer: 'Sokoto',
         },
         {
             question: 'Which of the following is not a Local Government Area of Cross River?',
-            optionA: 'Obudu',
-            optionB: 'Akpabuyo',
-            optionC: 'Ikom',
-            optionD: 'Wurno',
+            options: ['Obudu', 'Akpabuyo', 'Ikom', 'Wurno'],
             answer: 'Wurno',
         },
         {
             question: 'How many Local Government Area doe we have in Lagos?',
-            optionA: '19',
-            optionB: '20',
-            optionC: '22',
-            optionD: '30',
+            options: ['19', '20', '22', '30'],
             answer: '20',
         },
         {
             question: 'How many Local Government Area do we have in Nigeria?',
-            optionA: '762',
-            optionB: '771',
-            optionC: '784',
-            optionD: '774',
+            options: ['762', '771', '784', '774'],
             answer: '774',
         },
         {
             question: 'What is the slogan for Osun State?',
-            optionA: 'Center for Excellence',
-            optionB: 'The Food Basket',
-            optionC: 'State of the Living Spring',
-            optionD: 'The Sun Shine State',
+            options: ['Center for Excellence', 'The Food Basket', 'State of the Living Spring', 'The Sun Shine State'],
             answer: 'State of the Living Spring',
         },
         {
             question: 'What is the slogan for Lagos State?',
-            optionA: 'Center for Excellence',
-            optionB: 'The Food Basket',
-            optionC: 'State of the Living Spring',
-            optionD: 'The Sun Shine State',
+            options: ['Center for Excellence', 'The Food Basket', 'State of the Living Spring', 'The Sun Shine State'],
             answer: 'Center for Excellence',
         },
     ]
@@ -192,10 +162,9 @@ const LessonGame = () => {
                                 </div>
                                 <h3>{currentQuestion.question}</h3>
                                 <div className={styles.answerContainer}>
-                                    <div onClick={() => setselectedOption(currentQuestion.optionA)} className={styles.answerBox} style={optionStyle(currentQuestion.optionA)}>{currentQuestion.optionA}</div>
-                                    <div onClick={() => setselectedOption(currentQuestion.optionB)} className={styles.answerBox} style={optionStyle(currentQuestion.optionB)}>{currentQuestion.optionB}</div>
-                                    <div onClick={() => setselectedOption(currentQuestion.optionC)} className={styles.answerBox} style={optionStyle(currentQuestion.optionC)}>{currentQuestion.optionC}</div>
-                                    <div onClick={() => setselectedOption(currentQuestion.optionD)} className={styles.answerBox} style={optionStyle(currentQuestion.optionD)}>{currentQuestion.optionD}</div>
+                                    {currentQuestion.options.map((option, index) => (
+                                        <div key={index} onClick={() => setselectedOption(option)} className={styles.answerBox} style={optionStyle(option)}>{option}</div>
+                                    ))}
                                 </div>
                             </div>
                             <button className={styles.checkBtn} onClick={!showAnswer ? checkAnswer : incrementQuestion} disabled={!selectedOption}>{showAnswer ? 'Continue' : 'Check'}</button>
