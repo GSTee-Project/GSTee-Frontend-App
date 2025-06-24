@@ -277,3 +277,162 @@ img.streakImg {
     font-weight: 400;
     color: #00000080;
 }
+
+/* --- Unlocked Badges Section ---  */
+.unlockedBadgesSection {
+    margin-bottom: 40px;
+}
+
+.unlockedBadgesSection header {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unlockedBadgesSection header h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.unlockedBadgesSection header span {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.badgesContainer {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1.5px solid #00000080;
+    border-radius: 10px;
+}
+
+.badge {
+    text-align: center;
+    padding: 20px;
+    border-left: 1.5px solid;
+}
+
+.badge:first-child {
+    border-left: #00000040;
+}
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0866FF;
+    width: 85px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.badge h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.badge p {
+    font-weight: 500;
+}
+
+/* --- Achievement Section ---  */
+.achievementsSection {}
+
+.achievementsSection header {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievementsSection header h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.achievementsSection header span {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.achievementsSection .achievementsContainer {
+    border: 1px solid #00000080;
+    border-radius: 10px;
+}
+
+.achievement {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #00000080;
+}
+
+.achievement:last-child {
+    border-bottom: none;
+}
+
+.achievementImageContainer {
+    background-color: var(--primary-color);
+    width: 65px;
+    aspect-ratio: 1;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.achievement p {
+    font-weight: 700;
+    color: #00000080;
+    font-size: 15px;
+}
+
+/* --- Add Friends Section ---  */
+.addFriendSection {
+    margin-top: 50px;
+}
+
+.addFriendSection h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.addFriendSection .container{
+    border: 1px solid #00000080;
+    border-radius: 10px;
+}
+.addFriendSection .container > div{
+    padding: 20px;
+    border-bottom: 1px solid #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addFriendSection .container > div:last-child{
+    border-bottom: none;
+}
+.addFriendSection .container > div h4{
+    font-weight: 600;
+    font-size: 20px;
+}
+.addFriendSection .container > div .arrowIcon{
+    font-size: 22px;
+}
