@@ -41,7 +41,7 @@ const DashboardNavbar = ({ showMenu = true }) => {
       {showMenu &&
         <div className={`${styles.smallContainer} ${styles.left}`}>
           <FaRegBell size={22} className={`${styles.bellIcon} ${location.pathname === '/dashboard/notifications' && styles.purple}`} onClick={() => navigate('/dashboard/notifications')} />
-          <FaCircleUser size={36} className={styles.userIcon} />
+          <FaCircleUser onClick={() => navigate('/dashboard/profile')} size={36} className={styles.userIcon} />
           <IoIosArrowDown size={22} className={styles.arrowIcon} style={{transform: showDropDown ? 'rotate(-180deg)': 'rotate(0deg)'}} onClick={toggleDropDown} />
           {showDropDown &&
             <div className={styles.dropDownBox}>
