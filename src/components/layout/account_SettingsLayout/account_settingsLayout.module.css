@@ -21,7 +21,7 @@
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .sidebarContainer p {
@@ -34,7 +34,7 @@
     border-radius: 10px;
     cursor: pointer;
     transition: .15s;
-    font-size: 24px;
+    font-size: 17px;
 }
 
 .sidebarContainer p:hover {
@@ -54,39 +54,10 @@ button.btn {
     color: #EA4335;
     font-weight: 500;
     padding: 20px;
-    font-size: 24px;
+    font-size: 17px;
     width: 100%;
 }
 
 .children {
     width: 100%;
-}
-
-@media screen and (max-width: 1336px) {
-    .sidebarContainer h3 {
-        font-size: 28px;
-    }
-
-    .sidebarContainer p {
-        font-size: 20px;
-    }
-
-    button.btn {
-        font-size: 20px;
-    }
-
-}
-@media screen and (max-width: 1280px) {
-    .sidebarContainer h3 {
-        font-size: 24px;
-    }
-
-    .sidebarContainer p {
-        font-size: 16px;
-    }
-
-    button.btn {
-        font-size: 16px;
-    }
-
 }

@@ -1,7 +1,7 @@
 .main {
     width: 100%;
     font-family: 'Nunito';
-    padding: 35px 8%;
+    padding: 40px 6%;
 }
 
 .flex {
@@ -10,41 +10,17 @@
     gap: 15px;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 36px;
-}
-
-
-.points {
-    font-family: Nunito;
-    font-weight: 700;
-    font-size: 24px;
-    color: #0866FF
-}
-
-.desc {
-    font-family: Nunito;
-    font-weight: 500;
-    font-size: 18px;
-    color: #00000080;
-    margin-top: 7px;
-}
-
-.pointsDiv {
-    align-items: center;
-}
-
 .levelProgressDiv {
     border-radius: 10px;
-    margin-top: 3rem;
-    background: #EDE7F6;
-    padding: 2.7rem 3.2rem;
-    gap: 3.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    background: #EDE7F6;
+    padding: 40px 48px;
+    gap: 48px;
 }
 
 .levelProgressDiv_first {
@@ -53,8 +29,7 @@
 
 .progressLevelTitle {
     font-weight: 700;
-    font-size: 24px;
-
+    font-size: 20px;
 }
 
 .levelDiv1 {
@@ -66,14 +41,14 @@
 
 .xp {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 40px;
     color: var(--primary-color);
     margin: 10px 0;
 }
 
 .nextLevelXp {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -82,6 +57,7 @@
     padding: 30px 45px;
     border-radius: 10px;
     width: 35%;
+
 }
 
 .statRow {
@@ -115,7 +91,7 @@
 
 /* Badge */
 .badgeSection {
-    margin: 5.5rem 0;
+    margin: 2.5rem 0;
 }
 
 
@@ -128,7 +104,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    gap: 3.68rem;
+    gap: 2rem;
 }
 
 .card {
@@ -172,7 +148,7 @@
 
 .badgeTitle {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 0.6rem;
 }
 
@@ -190,8 +166,7 @@
 .levelContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-area: span; */
-    gap: 3.68rem;
+    gap: 1.5rem;
     row-gap: 1.5rem;
 }
 
@@ -208,12 +183,12 @@
 
 .level {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .levelDesc {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /*  */
@@ -227,431 +202,22 @@
 
 .infoText {
     font-weight: 700;
-    font-size: 36px;
-    margin-bottom: 1rem;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
 }
 
 .infoDesc {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-.questBtn {
+button.questBtn {
     background-color: var(--primary-color);
-    padding: 15px;
-    width: 17.5rem;
+    padding: 15px 20px;
     border-radius: 8px;
     font-size: 20px;
     color: white;
     font-family: 'Nunito';
     border: none;
-}
-
-@media screen and (max-width: 1366px) {
-
-    .title {
-        font-size: 32px;
-    }
-
-    .points {
-        font-size: 20px;
-    }
-
-    .desc {
-        font-size: 16px;
-    }
-
-    .pointsDiv {
-        align-items: center;
-    }
-
-    .levelProgressDiv {
-        border-radius: 10px;
-        margin-top: 2.5rem;
-        background: #EDE7F6;
-        padding: 2.5rem 3rem;
-        gap: 3rem;
-    }
-
-    .progressLevelTitle {
-        font-size: 20px;
-    }
-
-    .levelDiv1 {
-        margin-top: 1.2rem;
-        background: white;
-        padding: 35px 45px;
-        border-radius: 10px;
-    }
-
-    .xp {
-        font-weight: 700;
-        font-size: 40px;
-        color: var(--primary-color);
-        margin: 10px 0;
-    }
-
-    .nextLevelXp {
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .statCard {
-        background-color: #fff;
-        padding: 30px 45px;
-        border-radius: 10px;
-        width: 35%;
-    }
-
-    .statRow {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .statIcon {
-        width: 30px;
-        height: 30px;
-        font-weight: 700;
-        color: var(--primary-color)
-    }
-
-
-    .statValue {
-        font-weight: 800;
-        color: var(--primary-color);
-        font-size: 20px;
-        margin: 0;
-    }
-
-
-
-    .divider {
-        margin: 1.5rem 0;
-        border: none;
-        border-top: 1px solid #00000080;
-    }
-
-    /* Badge */
-    .badgeSection {
-        margin: 5.5rem 0;
-    }
-
-
-    .badgeHeader {
-        font-weight: 700;
-        font-size: 28px;
-        margin-bottom: 2.5rem;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        gap: 2.5rem;
-    }
-
-    .card {
-        border: 1px solid #00000080;
-        border-radius: 12px;
-        text-align: center;
-        padding: 25px 10px;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .badgeIcon {
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    .lockCircle {
-        width: 6.25rem;
-        height: 6.25rem;
-        border-radius: 50%;
-        background-color: #D9D9D9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lockIcon {
-        font-size: 3.5rem;
-    }
-
-    .badgeTitle {
-        font-size: 18px;
-        margin-bottom: 0.6rem;
-    }
-
-    .badgeSubtext {
-        font-size: 15px;
-    }
-
-    .locked {
-        opacity: 0.6;
-    }
-
-    /* Level */
-
-    .levelContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* grid-area: span; */
-        gap: 2.5rem;
-        row-gap: 1.5rem;
-    }
-
-    .levelCard {
-        border: 1px solid #00000080;
-        border-radius: 10px;
-        padding: 1.8rem;
-        display: flex;
-        gap: 2.5rem;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    .level {
-        font-size: 18px;
-    }
-
-    .levelDesc {
-        font-size: 18px;
-    }
-
-    /*  */
-    .more {
-        margin: 5rem 0;
-    }
-
-    .info {
-        padding-top: 1rem;
-    }
-
-    .infoText {
-        font-weight: 700;
-        font-size: 32px;
-        margin-bottom: 1rem;
-    }
-
-    .infoDesc {
-        font-weight: 500;
-        font-size: 20px;
-    }
-
-    .questBtn {
-        background-color: var(--primary-color);
-        padding: 10px;
-        width: 14rem;
-        border-radius: 8px;
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (max-width: 1280px) {
-
-    .title {
-        font-size: 28px;
-    }
-
-    .points {
-        font-size: 18px;
-    }
-
-    .desc {
-        font-size: 16px;
-    }
-
-    .levelProgressDiv {
-        border-radius: 10px;
-        margin-top: 2.5rem;
-        background: #EDE7F6;
-        padding: 2.5rem 3rem;
-        gap: 3rem;
-    }
-
-    .progressLevelTitle {
-        font-size: 20px;
-    }
-
-    .levelDiv1 {
-        margin-top: 1.2rem;
-        background: white;
-        padding: 35px 45px;
-        border-radius: 10px;
-    }
-
-    .xp {
-        font-weight: 700;
-        font-size: 40px;
-        color: var(--primary-color);
-        margin: 10px 0;
-    }
-
-    .nextLevelXp {
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-    .statCard {
-        background-color: #fff;
-        padding: 30px 45px;
-        border-radius: 10px;
-        width: 35%;
-    }
-
-    .statRow {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .statIcon {
-        width: 30px;
-        height: 30px;
-        font-weight: 700;
-        color: var(--primary-color)
-    }
-
-    .statValue {
-        font-weight: 800;
-        color: var(--primary-color);
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .divider {
-        margin: 1.5rem 0;
-        border: none;
-        border-top: 1px solid #00000080;
-    }
-
-    /* Badge */
-    .badgeSection {
-        margin: 2.5rem 0;
-    }
-
-
-    .badgeHeader {
-        font-weight: 700;
-        font-size: 28px;
-        margin-bottom: 2.5rem;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        gap: 1.5rem;
-    }
-
-    .card {
-        border: 1px solid #00000080;
-        border-radius: 12px;
-        text-align: center;
-        padding: 25px 10px;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease;
-    }
-
-    .badgeIcon {
-        font-size: 6rem;
-        margin-bottom: 0.5rem;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    .lockCircle {
-        width: 6.25rem;
-        height: 6.25rem;
-        border-radius: 50%;
-        background-color: #D9D9D9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lockIcon {
-        font-size: 3.5rem;
-    }
-
-    .badgeTitle {
-        font-size: 18px;
-        margin-bottom: 0.6rem;
-    }
-
-    .badgeSubtext {
-        font-size: 15px;
-    }
-
-
-    /* Level */
-    .levelContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        row-gap: 1.5rem;
-    }
-
-    .levelCard {
-        border: 1px solid #00000080;
-        border-radius: 10px;
-        padding: 1.8rem;
-        display: flex;
-        gap: 2.5rem;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
-
-    .level {
-        font-size: 18px;
-    }
-
-    .levelDesc {
-        font-size: 18px;
-    }
-
-    .more {
-        margin: 5rem 0;
-    }
-
-    .info {
-        padding-top: 1rem;
-    }
-
-    .infoText {
-        font-size: 28px;
-        margin-bottom: 0.5rem;
-    }
-
-    .infoDesc {
-        font-weight: 500;
-        font-size: 18px;
-    }
-
-    .questBtn {
-        background-color: var(--primary-color);
-        padding: 10px;
-        width: 14rem;
-        border-radius: 8px;
-        font-size: 18px;
-    }
-
+    cursor: pointer;
 }

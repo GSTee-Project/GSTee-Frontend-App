@@ -104,7 +104,7 @@ const LevelsAndBadges = () => {
         </div>
       </div>
       {/*  */}
-      <div className={`${styles.levelProgressDiv} ${styles.more}`} style={{marginTop: '0'}}>
+      <div className={`${styles.levelProgressDiv} ${styles.more}`} style={{marginBottom: '0', marginTop: '0'}}>
         <div className={styles.info}>
           <p className={styles.infoText}>Want to level up faster?</p>
           <p className={styles.infoDesc}>Don’t miss today’s quests!</p>
