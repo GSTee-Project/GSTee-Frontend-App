@@ -21,6 +21,10 @@ import AllCourses from '../pages/dashboard/courses/allCourses';
 import LessonGame from '../pages/dashboard/courseLesson/lessonGame/lessonGame';
 import Profile from '../pages/dashboard/profile/profile';
 import MemoryMatch from '../pages/games/memoryMatch/memoryMatch';
+import QuickQuiz from '../pages/games/quickQuiz/quickQuiz';
+import BattleMode from '../pages/games/battleMode/battleMode';
+import ChallengeArena from "../pages/games/challengeArena/challengeArena";
+
 
 
 const AppRoutes = () => {
@@ -68,10 +72,10 @@ const AppRoutes = () => {
 
                 {/* --- games section --- */}
                 <Route path='/games' element={<GameLayout />}>
-                    <Route path='quick-quiz' element={<>Quick Quiz</>} />
-                    <Route path='battle-mode' element={<>Battle Mode</>} />
+                    <Route path='quick-quiz' element={<QuickQuiz />} />
+                    <Route path='battle-mode' element={<BattleMode/>} />
                     <Route path='memory-match' element={<MemoryMatch />} />
-                    <Route path='challenge-arena' element={<>Challenge Arena</>} />
+                    <Route path='challenge-arena' element={<ChallengeArena/>} />
                 </Route>
             </Routes>
         </Router>
