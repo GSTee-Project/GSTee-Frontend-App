@@ -3,6 +3,8 @@
   --secondary-color: #221433;
   --neutral-dark: #000000;
   --neutral-white: #FFFFFF;
+  --correct-answer: #34A853;
+  --wrong-answer: #F44336;
 }
 .app {
   background-color: white;
