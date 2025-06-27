@@ -1,0 +1,117 @@
+.main {
+    width: 100%;
+    font-family: 'Nunito';
+    padding: 35px 0;
+}
+
+.topBar {
+  display: flex;
+  gap: 2.8rem;
+  align-items: center;
+  margin-left: 12%;
+  margin-right: 5%;
+}
+.level{
+    font-weight: 700;
+    font-size: 32px;
+    white-space: nowrap;
+}
+
+.qNumber {
+  margin: 1.2rem 0 2rem;
+  font-size: 32px;
+  font-weight: 700;
+  color: #00000080;
+  text-align: center;
+}
+.cardContainer {
+  width: 100%;
+  max-width: 76%;
+  background: #420B7F33;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem 8rem;
+  margin: auto;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.speaker{
+  color: #0000004D;
+  font-size: 29px;
+}
+
+.hearts{
+  font-size: 23px;
+  color:#EA4335;
+}
+
+.question {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  text-align: center;
+
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  padding: 0 3rem;
+}
+
+.option {
+  padding: 28px;
+  border: 2px solid white;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 32px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  color: black;
+}
+
+.option:hover {
+  background-color: #f3f3f3;
+}
+
+.correct, .correct:hover {
+  background-color: #34A853;
+  border-color: #34A853;
+  color: #ffff;
+}
+
+.incorrect, .incorrect:hover {
+  background-color: #F44336;
+  border-color: #F44336;
+  color: #ffff;
+}
+
+.btnDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.continueButton {
+  margin: 2.5rem;
+  padding: 1.5rem 6.8rem;
+  background-color: #34A853;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 32px;
+  cursor: pointer
+}
+
+.continueButton:disabled {
+  background-color: #34A853;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

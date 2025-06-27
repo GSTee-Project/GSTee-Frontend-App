@@ -1,0 +1,65 @@
+.resultScreen {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  width: 65%;
+  margin: auto;
+}
+
+.title{
+  font-size: 64px;
+}
+.desc{
+  font-size: 24px;
+  font-weight: 300;
+}
+.rewards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.rewardCard {
+  color: #fff;
+  padding: 10px 3px 3px;
+  border-radius: 10px;
+  font-weight: bold;
+  min-width: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 200px
+}
+.text{
+  font-size: 20px;
+  font-weight: 700;
+}
+.valueCard{
+  background: black;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.value {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.nextLevelButton {
+   background-color: var(--primary-color);
+    padding: 15px;
+    width: 17.5rem;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    margin-top: 3.5rem;
+    width: 100%;
+}
