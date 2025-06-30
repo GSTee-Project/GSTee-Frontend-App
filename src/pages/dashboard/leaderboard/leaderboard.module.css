@@ -27,14 +27,14 @@
     gap: 40px;
     overflow: hidden;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .leaderboard_navigation button {
     background-color: transparent;
     border: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #00000080;
     cursor: pointer;
@@ -48,6 +48,9 @@
 
 }
 
+.leaderboard_navigation button.active {
+    color: var(--primary-color);
+}
 .leaderboard_navigation button.active::after {
     content: '';
     position: absolute;
@@ -57,14 +60,4 @@
     height: 4px;
     border-radius: 10px;
     background-color: var(--primary-color);
-}
-
-@media screen and (max-width: 1336px) {
-    .leaderboard_navigation button {
-        font-size: 18px;
-    }
-
-    .leaderboard_overview {
-        margin-top: 20px;
-    }
 }

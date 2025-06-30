@@ -4,15 +4,18 @@ import { BiSolidChat, BiEnvelope, BiGroup } from 'react-icons/bi';
 import { BsChatTextFill } from "react-icons/bs";
 import { FaEnvelope } from "react-icons/fa6";
 import { HiUserGroup } from "react-icons/hi2";
+import SearchBox from '../../../components/ui/searchBox/searchBox';
 
 const HelpCenter = () => {
   return (
     <>
       <div className={styles.title}>Help Center</div>
-      <div className={styles.searchBox}>
+      {/* <div className={styles.searchBox}>
         <input type="text" placeholder="Search" />
         <FiSearch className={styles.searchIcon} />
-      </div>
+      </div> */}
+
+      <SearchBox />
 
       <h4 className={styles.sectionHeader}>Popular Help Topics</h4>
 

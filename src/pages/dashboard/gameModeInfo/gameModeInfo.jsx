@@ -48,7 +48,6 @@ const GameModeInfo = ({ index }) => {
             <div className={styles.header}>
                 <LuArrowLeft className={styles.backIcon} onClick={() => navigate('/dashboard/play-games')} />
                 <h3>{current_game_info.title}</h3>
-
             </div>
 
             <div className={styles.info}>

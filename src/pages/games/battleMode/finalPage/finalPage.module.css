@@ -1,0 +1,108 @@
+.page{
+    width: 100%;
+    min-height: calc(100dvh - 80px);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.page > img{
+    width: 90px;
+}
+.page > h3{
+    font-weight: 600;
+    font-size: 42px;
+    margin: 10px 0 5px;
+}
+.page > p{
+    font-weight: 300;
+    font-family: 'Dm Sans';
+    font-size: 18px;
+}
+.avatarSection{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.avatarContainer {
+  width: 150px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.avatar_label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  color: var(--neutral-dark);
+}
+.score_text{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0 60px;
+
+}
+.statCard{
+    width: 170px;
+    background-color: #FBBC05;
+    padding: 4px;
+    border-radius: 7px;
+    text-align: center;
+}
+.statCard p{
+    margin: 5px 0 2px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.statCard > div{
+    margin-top: 5px;
+    background-color: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #FBBC05;
+    border-radius: 7px;
+    font-weight: 800;
+}
+.statCard > div img{
+    width: 20px;
+}
+.page button{
+    width: 600px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+.page button.secondBtn{
+    color: #00000080;
+    background-color: transparent;
+    border: 1px solid #00000080;
+}

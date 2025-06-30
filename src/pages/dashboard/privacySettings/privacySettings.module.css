@@ -1,20 +1,20 @@
 .page h3 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
     font-family: 'Nunito';
-    margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .group {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .group h4 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
     font-weight: 700;
-    margin-bottom: 50px;
     position: relative;
-    padding-bottom: 30px;
 }
 
 .group h4::before {
@@ -31,25 +31,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 35px;
-    font-size: 24px;
     font-weight: 400;
     color: #000000;
+    margin-bottom: 25px;
+    font-size: 18px;
 }
 
 .formInput label {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     display: block;
 }
 
 .formInput select {
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 18px;
     width: 100%;
     border: 1px solid #00000061;
     font-family: 'Inter';
-    padding: 20px 15px;
     border-radius: 10px;
-    font-size: 22px;
     font-weight: 400;
     outline: none;
     appearance: none;
@@ -57,7 +58,7 @@
 
 .selectContainer {
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .icon {
@@ -65,103 +66,11 @@
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: 22px;
 }
 
 p.downloadText {
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 24px;
-}
-
-@media screen and (max-width: 1366px) {
-    .page h3 {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
-    .group {
-        margin-bottom: 60px;
-    }
-
-    .group h4 {
-        font-size: 20px;
-        margin-bottom: 40px;
-        padding-bottom: 20px;
-    }
-
-    .menu {
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-
-    .formInput label {
-        font-size: 20px;
-    }
-
-    .formInput select {
-        padding: 15px 10px;
-        border-radius: 10px;
-        font-size: 20px;
-    }
-
-    .selectContainer {
-        position: relative;
-        margin-top: 20px;
-    }
-
-    .icon {
-        font-size: 25px;
-    }
-
-    p.downloadText {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .page h3 {
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-
-    .group {
-        margin-bottom: 50px;
-    }
-
-    .group h4 {
-        font-size: 20px;
-        margin-bottom: 30px;
-        padding-bottom: 15px;
-    }
-
-    .menu {
-        margin-bottom: 25px;
-        font-size: 18px;
-    }
-
-    .formInput label {
-        font-size: 18px;
-    }
-
-    .formInput select {
-        padding: 15px 10px;
-        border-radius: 10px;
-        font-size: 18px;
-    }
-
-    .selectContainer {
-        position: relative;
-        margin-top: 15px;
-    }
-
-    .icon {
-        font-size: 22px;
-    }
-
-    p.downloadText {
-        color: var(--primary-color);
-        font-weight: 700;
-        font-size: 18px;
-    }
+    font-size: 18px;
 }
