@@ -26,40 +26,39 @@ const QuestionCard = ({
   };
 
   const getOptionClass = (option) => {
-    if (!answered) return styles.option;
-    if (option === correctAnswer) return `${styles.option} ${styles.correct}`;
-    if (option === selected) return `${styles.option} ${styles.incorrect}`;
-    return styles.option;
+    if (!answered) return styles.optionButton;
+    if (option === correctAnswer) return `${styles.optionButton} ${styles.correct}`;
+    if (option === selected) return `${styles.optionButton} ${styles.wrong}`;
+    return styles.optionButton;
   };
 
   return (
     <>
-      <div className={styles.cardContainer}>
-          <div className={styles.cardHeader}>
-            <HiMiniSpeakerWave className={styles.speaker}/>
-            <span className={styles.hearts}>
-              <IoMdHeart/>
-              <IoMdHeart/>
-              <IoMdHeart/>
-              <IoMdHeart/>
-              <IoMdHeart/>
-            </span>
-          </div>
+      <div className={styles.contentBox}>
+        <div className={styles.headContainer}>
+          <HiMiniSpeakerWave className={styles.speaker} />
+          <span className={styles.hearts}>
+            <IoMdHeart />
+            <IoMdHeart />
+            <IoMdHeart />
+            <IoMdHeart />
+            <IoMdHeart />
+          </span>
+        </div>
 
-          <h2 className={styles.question}>{question}</h2>
+        <h3>{question}</h3>
 
-          <div className={styles.optionsContainer}>
-            {options.map((option) => (
-              <button key={option} className={getOptionClass(option)} onClick={() => handleSelect(option)} disabled={answered}>
-                {option}
-              </button>
-            ))}
-          </div>
+        <div className={styles.answerContainer}>
+          {options.map((option) => (
+            <button key={option} className={getOptionClass(option)} onClick={() => handleSelect(option)} disabled={answered}>
+              {option}
+            </button>
+          ))}
+        </div>
 
       </div>
-      <div className={styles.btnDiv}>
-        <button className={styles.continueButton} onClick={handleContinue} disabled={!answered}> Continue</button>
-      </div>
+      <button className={styles.checkBtn} onClick={handleContinue} disabled={!answered}> Continue</button>
+
     </>
   );
 };

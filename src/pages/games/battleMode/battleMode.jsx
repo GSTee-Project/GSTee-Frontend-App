@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import quizData from '../../../data/quizData.json';
 import styles from './battleMode.module.css';
-import celebrationConfetti from '../../../assets/images/noto_confetti-ball.png';
-import gem from '../../../assets/images/gem.svg';
-import target from '../../../assets/images/target.svg';
-import lightning from '../../../assets/images/lightning.svg';
 import userIcon from '../../../assets/images/userIcon.jpg';
 import opponentIcon from '../../../assets/images/opponentIcon.jpg';
+import { HiMiniSpeakerWave } from 'react-icons/hi2';
+import QuizCompletion from '../../../components/ui/quizCompletion/quizCompletion';
+import Bar from '../../dashboard/courseLesson/lessonGame/bar';
+import FinalPage from './finalPage/finalPage';
 
 const BattleMode = () => {
   const totalTime = 60;
@@ -62,50 +62,40 @@ const BattleMode = () => {
     }
   };
 
-  const progress = ((currentQuestion + (showResult ? 1 : 0)) / questions.length) * 100;
+  // const progress = ((currentQuestion + (showResult ? 1 : 0)) / questions.length) * 100;
+  const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   return (
-    <div className={styles.page_layout}>
-      {!showResult && (
+    <div className={styles.container}>
+      {!showResult ?
         <>
-          <div className={styles.avatar_left}>
+          {/* --- Opponent Avatar --- */}
+          <div className={styles.avatarContainer}>
             <img src={userIcon} alt="You" className={styles.avatar} />
             <p className={styles.avatar_label}>You</p>
           </div>
-          <div className={styles.avatar_right}>
-            <img src={opponentIcon} alt="Joseph" className={styles.avatar} />
-            <p className={styles.avatar_label}>Joseph</p>
-          </div>
-        </>
-      )}
 
-      <div className={styles.quiz_wrapper}>
-        {!showResult ? (
-          <>
-            <div className={styles.top_bar}>
-              <div className={styles.progress_timer_row}>
-                <div className={styles.progress_bar_background}>
-                  <div
-                    className={styles.progress_bar_fill}
-                    style={{ width: `${progress}%` }}
-                  ></div>
-                </div>
-                <div className={styles.timer}>{timeLeft} secs</div>
-              </div>
-              <div className={styles.question_label}>
-                Question {currentQuestion + 1} of {questions.length}
-              </div>
+          {/* --- MIDDLE CONTENT --- */}
+          <div className={styles.content}>
+            {/*--- TOP BAR ---*/}
+            <div className={styles.progress_timer_row}>
+              <Bar percent={`${progress}%`} />
+              <div className={styles.timer}>{timeLeft} secs</div>
             </div>
+            <h4>Question {currentQuestion + 1} of {questions.length}</h4>
 
-            <div className={styles.quiz_container}>
+            {/* --- QUIZ QUESTION CONTAINER --- */}
+            <div className={styles.contentBox}>
               {questions.length > 0 && (
                 <>
-                  <p className={styles.question_text}>
-                    {questions[currentQuestion].question}
-                  </p>
-                  <div>
+                  <div className={styles.headContainer}>
+                    <HiMiniSpeakerWave size={26} color={'#00000080'} style={{ cursor: 'pointer' }} />
+                  </div>
+                  <h3>{questions[currentQuestion].question}</h3>
+                  <div className={styles.answerContainer}>
                     {questions[currentQuestion].options.map((option, idx) => {
                       let optionClass = styles.optionButton;
+
                       if (isOptionClicked) {
                         if (option === questions[currentQuestion].answer) {
                           optionClass += ` ${styles.correct}`;
@@ -117,56 +107,30 @@ const BattleMode = () => {
                       }
 
                       return (
-                        <button
-                          key={idx}
-                          onClick={() => handleOptionClick(option)}
-                          disabled={isOptionClicked}
+                        <button key={idx} onClick={() => handleOptionClick(option)} disabled={isOptionClicked}
                           className={optionClass}
                         >
                           {option}
                         </button>
                       );
                     })}
+
                   </div>
-                </>
-              )}
+                </>)}
             </div>
-
-            <button
-              onClick={handleSkip}
-              className={styles.skip_button}
-              disabled={isOptionClicked}
-            >
-              Skip
-            </button>
-          </>
-        ) : (
-          <div className={styles.congrats_container}>
-            <img
-              src={celebrationConfetti}
-              alt="Confetti"
-              className={styles.confetti_icon}
-            />
-            <h2 className={styles.congrats_text}>Congratulations!</h2>
-            <p className={styles.sub_text}>You've successfully completed this lesson.</p>
-
-            <div className={styles.final_avatar_scores}>
-              <div className={styles.player_result}>
-                <img src={userIcon} alt="You" className={styles.result_avatar} />
-                <p className={styles.result_name}>You</p>
-                <p className={styles.result_score}>
-                  {score} out of {questions.length}
-                </p>
-              </div>
-              <div className={styles.player_result}>
-                <img src={opponentIcon} alt="Joseph" className={styles.result_avatar} />
-                <p className={styles.result_name}>Joseph</p>
-                <p className={styles.result_score}>8 out of {questions.length}</p>
-              </div>
-            </div>
+            <button className={styles.checkBtn} onClick={handleSkip} disabled={isOptionClicked}>skip</button>
           </div>
-        )}
-      </div>
+
+          {/* --- User Avatar --- */}
+          <div className={styles.avatarContainer}>
+            <img src={opponentIcon} alt="Joseph" className={styles.avatar} />
+            <p className={styles.avatar_label}>Joseph</p>
+          </div>
+        </>
+        :
+        <FinalPage xp={'30'} gems={'30'} score={score } />
+
+      }
     </div>
   );
 };

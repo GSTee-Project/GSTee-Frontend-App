@@ -1,6 +1,7 @@
 .page{
     width: 100%;
     min-height: calc(100dvh - 80px);
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +12,7 @@
     width: 90px;
 }
 .page > h3{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 42px;
     margin: 10px 0 5px;
 }
@@ -19,6 +20,38 @@
     font-weight: 300;
     font-family: 'Dm Sans';
     font-size: 18px;
+}
+.avatarSection{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.avatarContainer {
+  width: 150px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.avatar_label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  color: var(--neutral-dark);
+}
+.score_text{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Nunito';
 }
 .cardContainer{
     display: flex;

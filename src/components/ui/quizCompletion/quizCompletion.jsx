@@ -5,15 +5,17 @@ import hexagon from '../../../assets/images/hexagon.svg'
 import target from '../../../assets/images/target.svg'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-const QuizCompletion = ({ xp, gems, score }) => {
+const QuizCompletion = ({ xp, gems, score= 0, continueBtn = true, continueText, continueFunction, reviewBtn = true, reviewText, reviewFunction }) => {
 
     const navigate = useNavigate();
     const location = useLocation();
 
+    // --- go back once ---
     const reviewLesson = () => {
         navigate(location.pathname.split('/').slice(0, -1).join('/'));
     }
 
+    // --- go back twice ---
     const backToCourse = () => {
         navigate(location.pathname.split('/').slice(0, -2).join('/'));
     }
@@ -54,8 +56,8 @@ const QuizCompletion = ({ xp, gems, score }) => {
                     </div>
                 </div>
             </div>
-            <button onClick={backToCourse}>Continue</button>
-            <button onClick={reviewLesson}>Review Lesson</button>
+            {continueBtn && <button onClick={continueFunction || backToCourse}>{continueText || 'Continue'}</button>}
+            {reviewBtn && <button onClick={reviewFunction || reviewLesson} className={styles.secondBtn}>{reviewText || 'Review Lesson'}</button>}
         </div>
     )
 }

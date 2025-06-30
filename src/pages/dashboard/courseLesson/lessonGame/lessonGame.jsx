@@ -9,7 +9,7 @@ import QuizCompletion from '../../../../components/ui/quizCompletion/quizComplet
 const LessonGame = () => {
 
     const [currentNo, setCurrentNo] = useState(1);
-    const [totalNo, setTotalNo] = useState(10);
+    const totalNo = 10;
     const [totalHearts, setTotalHearts] = useState(5);
     const [score, setScore] = useState(0);
 
@@ -109,7 +109,6 @@ const LessonGame = () => {
         }
 
         if (showAnswer) {
-
             // ---  for the selected option
             if (optionValue === selectedOption) {
                 if (currentQuestion.answer === optionValue) {
@@ -147,28 +146,29 @@ const LessonGame = () => {
                     <div className={styles.content}>
                         <Bar percent={`${(currentNo / totalNo) * 100}%`} />
                         <h4>Question {currentNo} of {totalNo}</h4>
-                        <div>
-                            <div className={styles.contentBox}>
-                                <div className={styles.headContainer}>
-                                    <HiMiniSpeakerWave size={26} color={'#00000080'} style={{ cursor: 'pointer' }} />
-                                    <div className={styles.heartContainer}>
-                                        {Array.from({ length: totalHearts }).map((_, index) => (
-                                            <FaHeart key={index} size={20} color={'#EA4335'} />
-                                        ))}
-                                        {Array.from({ length: 5 - totalHearts }).map((_, index) => (
-                                            <FaHeart key={index} size={20} color={'#00000080'} />
-                                        ))}
-                                    </div>
-                                </div>
-                                <h3>{currentQuestion.question}</h3>
-                                <div className={styles.answerContainer}>
-                                    {currentQuestion.options.map((option, index) => (
-                                        <div key={index} onClick={() => setselectedOption(option)} className={styles.answerBox} style={optionStyle(option)}>{option}</div>
+
+                        {/* --- QUIZ QUESTION CONTAINER --- */}
+                        <div className={styles.contentBox}>
+                            <div className={styles.headContainer}>
+                                <HiMiniSpeakerWave size={26} color={'#00000080'} style={{ cursor: 'pointer' }} />
+                                <div className={styles.heartContainer}>
+                                    {Array.from({ length: totalHearts }).map((_, index) => (
+                                        <FaHeart key={index} size={20} color={'#EA4335'} />
+                                    ))}
+                                    {Array.from({ length: 5 - totalHearts }).map((_, index) => (
+                                        <FaHeart key={index} size={20} color={'#00000080'} />
                                     ))}
                                 </div>
                             </div>
-                            <button className={styles.checkBtn} onClick={!showAnswer ? checkAnswer : incrementQuestion} disabled={!selectedOption}>{showAnswer ? 'Continue' : 'Check'}</button>
+                            <h3>{currentQuestion.question}</h3>
+                            <div className={styles.answerContainer}>
+                                {currentQuestion.options.map((option, index) => (
+                                    <div key={index} onClick={!showAnswer ? () => setselectedOption(option) : ''} className={styles.answerBox} style={optionStyle(option)}>{option}</div>
+                                ))}
+                            </div>
                         </div>
+                        <button className={styles.checkBtn} onClick={!showAnswer ? checkAnswer : incrementQuestion} disabled={!selectedOption}>{showAnswer ? 'Continue' : 'Check'}</button>
+
                     </div> :
                     <QuizCompletion xp={'30'} gems={'30'} score={score / totalNo} />
                 }
