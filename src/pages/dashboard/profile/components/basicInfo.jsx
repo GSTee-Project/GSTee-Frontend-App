@@ -18,7 +18,7 @@ const BasicInfo = () => {
                     <h3>Tolu James</h3>
                     <p>Novice Learner</p>
                 </div>
-                <button>Edit Profile</button>
+                <button onClick={() => navigate('/dashboard/edit-profile')}>Edit Profile</button>
             </div>
             <div className={styles.followerInfo}>
                 <p>19 Following</p>

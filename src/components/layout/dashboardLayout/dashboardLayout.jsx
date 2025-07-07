@@ -2,7 +2,8 @@ import { Outlet, useLocation } from "react-router-dom"
 import DashboardNavbar from "../../ui/dashboardNavbar/dashboardNavbar"
 import DashboardSidebar from "../../ui/dashboardSidebar/dashboardSidebar"
 import styles from './dashboardLayout.module.css'
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
+import BottomNav from "../../ui/bottomNav/bottomNav"
 
 const DashboardLayout = () => {
 
@@ -16,16 +17,17 @@ const DashboardLayout = () => {
     }
   }, [location.pathname]);
 
-
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
 
   return (
     <div className={styles.layout}>
-      <DashboardNavbar />
+      <DashboardNavbar setIsMobileSidebarOpen={setIsMobileSidebarOpen} />
       <div className={styles.contentSection}>
-        <DashboardSidebar />
-        <div className={styles.outlet} ref={pageRef}>
+        <DashboardSidebar isMobileSidebarOpen={isMobileSidebarOpen} setIsMobileSidebarOpen={setIsMobileSidebarOpen} />
+        <div className={styles.outlet} onClick={() => setIsMobileSidebarOpen(false)} ref={pageRef}>
           <Outlet />
         </div>
+        <BottomNav />
       </div>
 
     </div>
