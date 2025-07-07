@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.smallContainer.left {
+.smallContainer.right {
     justify-content: flex-end;
     position: relative;
 }
@@ -50,7 +50,9 @@
     cursor: pointer;
     transition: .2s;
 }
-.bellIcon:hover, .bellIcon.purple {
+
+.bellIcon:hover,
+.bellIcon.purple {
     color: var(--primary-color);
 }
 
@@ -64,11 +66,12 @@
     cursor: pointer;
     transition: .2s;
 }
-.arrowIcon:hover{
+
+.arrowIcon:hover {
     color: var(--primary-color);
 }
 
-.dropDownBox{
+.dropDownBox {
     position: absolute;
     top: 130%;
     background-color: white;
@@ -76,14 +79,25 @@
     border-radius: 10px;
     padding: 15px 0;
     width: 150px;
+    z-index: 1000;
 }
-.dropDownBox p{
+
+.dropDownBox .mainNavlinks {
+    display: none;
+}
+
+.dropDownBox p {
     padding: 10px 30px;
     cursor: pointer;
     transition: .15s;
 }
-.dropDownBox p:hover{
+
+.dropDownBox p:hover {
     background-color: #eee;
+}
+
+.menuIcon {
+    display: none;
 }
 
 @media screen and (max-width: 1336px) {
@@ -92,9 +106,36 @@
     }
 
 }
+
 @media screen and (max-width: 1280px) {
     .navbar {
         height: 80px;
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .navLinks {
+        display: none;
+    }
+
+    .dropDownBox {
+        width: 200px;
+    }
+
+    .dropDownBox .mainNavlinks {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .right {
+        display: none;
+    }
+
+    .menuIcon {
+        display: block;
+        font-size: 32px;
+        color: #333;
+    }
 }

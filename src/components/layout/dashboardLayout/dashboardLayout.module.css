@@ -4,11 +4,17 @@
 }
 
 .contentSection{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    position: relative;
 }
 
 .outlet{
     height: calc(100dvh - 80px);
     overflow: auto;
+    flex: 1;
+}
+@media screen and (max-width: 500px) {
+    .outlet{
+        padding-bottom: 70px;
+    }
 }

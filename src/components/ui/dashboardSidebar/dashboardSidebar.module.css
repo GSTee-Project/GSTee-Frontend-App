@@ -1,17 +1,25 @@
 .sidebar {
-    width: 100%;
+    width: 20%;
     border-right: 1px solid #00000061;
     height: calc(100dvh - 80px);
     overflow: auto;
     font-family: 'Nunito';
-
+    background-color: white;
     /* Firefox */
     scrollbar-width: none;
     scrollbar-color: var(--primary-color) #f4f4f4;
+    transition: .3s;
 }
 
 .sidebar:hover {
     scrollbar-width: thin;
+}
+.closeIcon{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #555;
 }
 
 .sidebarMenu {
@@ -48,4 +56,126 @@
 
 .sidebarMenuIcon {
     font-size: 24px;
+}
+
+.mobileBottomContent{
+    display: none;
+    padding: 0 12.5%;
+    margin-top: 20px;
+}
+.mobileBottomContent > button{
+    border: 1px solid #00000061;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    color: #EA4335;
+    font-size: 16px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.profileSection {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: auto;
+}
+
+.bellIcon {
+    margin-right: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.bellIcon:hover,
+.bellIcon.purple {
+    color: var(--primary-color);
+}
+
+.userIcon {
+    color: #00000061;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    color: #00000061;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.arrowIcon:hover {
+    color: var(--primary-color);
+}
+
+.dropDownBox {
+    position: absolute;
+    top: 130%;
+    left: 30%;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 150px;
+}
+
+.dropDownBox p {
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.dropDownBox p:hover {
+    background-color: #eee;
+}
+
+@media screen and (max-width: 1150px) {
+    .sidebarMenu p {
+        display: none;
+    }
+
+    .userProfileContainer {
+        display: none;
+    }
+
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebarMenu a {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebarMenu p {
+        display: block;
+    }
+
+    .userProfileContainer {
+        display: block;
+    }
+
+    .sidebar {
+        width: 310px;
+        border-right: 1.5px solid #00000061;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        transition: .15s;
+    }
+    .closeIcon{
+        display: block;
+    }
+
+    .sidebarMenu a {
+        padding: 15px 12.5%;
+    }
+    .mobileBottomContent{
+        display: block;
+    }
 }

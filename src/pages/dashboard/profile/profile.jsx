@@ -13,6 +13,7 @@ const Profile = () => {
     <div className={styles.page}>
       <div className={styles.left}>
         <BasicInfo />
+        
         <div style={{ paddingBottom: '50px', borderBottom: '1px solid #00000080', marginBottom: '40px' }}>
           <Overview />
           <FriendStreak />

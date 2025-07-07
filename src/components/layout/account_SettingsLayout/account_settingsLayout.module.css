@@ -1,12 +1,11 @@
 .layout {
-    display: grid;
-    grid-template-columns: 60.5% 35%;
-    column-gap: 4.5%;
+    display: flex;
+    gap: 4.5%;
     padding: 30px 3%;
 }
 
 .sidebarSection {
-    width: 100%;
+    width: 35%;
 }
 
 .sidebarContainer {
@@ -59,5 +58,74 @@ button.btn {
 }
 
 .children {
+    flex: 1;
+}
+
+.tab {
+    margin-bottom: 20px;
+    display: none;
+}
+
+.tabHeader {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tabHeader p {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Nunito';
+    padding-bottom: 10px;
+}
+
+.tabHeader p.active {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.tabHeader p.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+
+.tabContent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.tabContent>div {
+    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 5px 10px;
+}
+
+.tabContent .active {
+    background-color: #EADDFF;
+    border: 1px solid var(--primary-color);
+}
+
+
+@media screen and (max-width: 700px) {
+    .sidebarSection {
+        display: none;
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+    .tab{
+        display: block;
+    }
+
 }

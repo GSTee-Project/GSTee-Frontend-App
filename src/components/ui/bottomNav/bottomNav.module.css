@@ -1,0 +1,37 @@
+.bottomNav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 15px;
+    border: 1px solid #00000061;
+    border-radius: 15px 15px 0 0;
+}
+.bottomNav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 14px;
+}
+
+.menuIcon{
+    font-size: 22px;
+}
+
+.bottomNav a:hover,
+.bottomNav a.active {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 500px) {
+    .bottomNav{
+        display: flex;
+    }
+}

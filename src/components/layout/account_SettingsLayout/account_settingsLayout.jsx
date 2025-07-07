@@ -7,10 +7,12 @@ import Notifications from '../../../pages/dashboard/notifications/notifications'
 import PrivacySettings from '../../../pages/dashboard/privacySettings/privacySettings'
 import HelpCenter from '../../../pages/dashboard/helpCenter/helpCenter'
 import ReportBug from '../../../pages/dashboard/reportBug/reportBug'
+import Tab from './tab'
 
 const Account_SettingsLayout = ({ menu }) => {
     return (
         <div className={styles.layout}>
+            <Tab />
             <div className={styles.children}>
                 {menu === 'Profile' && <EditProfile />}
                 {menu === 'Preferences' && <Preferences />}
