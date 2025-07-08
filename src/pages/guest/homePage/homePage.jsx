@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './homePage.module.css';
 import game from '../../../assets/images/game.png';
 import leaderboard from '../../../assets/images/leaderboard.png';
@@ -15,6 +15,7 @@ import video from '../../../assets/images/video.png';
 import FAQ from '../../../components/ui/FAQ/FAQ';
 import Footer from '../../../components/ui/guestFooter/guestFooter';
 import Navbar from '../../../components/ui/guestNavbar/navbar';
+import GsteeAboutCarousel from './gsteeAboutCarousel';
 
 const HomePage = () => {
 
@@ -72,7 +73,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/*--- GSTEE SECTION ---*/}
+        {/*--- GSTEE SECTION (Desktop)---*/}
         <section id='about' className={styles.gstee_section}>
           <div className={styles.gstee_header}>
             <h2>GSTee</h2>
@@ -109,6 +110,9 @@ const HomePage = () => {
                 <p>See how you rank against other learners</p>
               </div>
             </div>
+
+            {/* --- Gstee Mobile Carousel ---*/}
+            <GsteeAboutCarousel />
           </div>
         </section>
 

@@ -65,3 +65,51 @@
   color: #ffb703;
   font-weight: 500;
 }
+
+/* --- Media Queries --- */
+@media (max-width: 992px) {
+  .footer {
+    padding: 2em;
+    text-align: left;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5em;
+    padding-bottom: 3em;
+  }
+
+  .section {
+    flex: 1 1 100%;
+    max-width: 300px;
+  }
+
+  .about {
+    max-width: 100%;
+    margin: 0 auto 1rem;
+    font-size: 0.9rem;
+  }
+
+  .socials {
+    justify-content: flex-start;
+    font-size: 1.3rem;
+  }
+
+  .section h4 {
+    margin-bottom: 1em;
+    font-size: 1.05rem;
+  }
+
+  .section ul li {
+    font-size: 0.9rem;
+  }
+
+  .bottom_bar {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
+
