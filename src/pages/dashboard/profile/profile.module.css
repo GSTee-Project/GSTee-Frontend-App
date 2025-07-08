@@ -464,25 +464,31 @@ img.streakImg {
   }
 
   .nameInfo {
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
     gap: 10px;
     margin: 15px 0;
   }
 
   .nameInfo button {
-    width: 100%;
+    padding: 10px 16px;
+    font-weight: 800;
+    font-family: "Nunito";
+    border-radius: 6px;
+    background-color: white;
+    border: 1.5px solid;
+    cursor: pointer;
   }
 
   .followerInfo {
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
     gap: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  button.add {
-    width: 100%;
+    color: var(--primary-color);
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   /* Overview Mobile */
@@ -504,21 +510,28 @@ img.streakImg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .singleFriendStreak {
     width: calc(33% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .singleFriendStreak img {
-    width: 30px;
+    width: 35px;
+  }
+
+  img.streakImg {
+    width: 20px;
   }
 
   .singleFriendStreak > div {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 2px;
     font-size: 16px;
     font-weight: 400;
     color: #d47129;
@@ -544,7 +557,7 @@ img.streakImg {
 
   /* Unlocked Badges Mobile */
   .badgesContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .badge {
@@ -553,8 +566,33 @@ img.streakImg {
     padding: 15px;
   }
 
+  .badge h4 {
+    font-size: 12px;
+  }
+
+  .badge p {
+    font-size: 11px;
+  }
+
   .badge:last-child {
     border-bottom: none;
+  }
+
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0866ff;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .imageContainer > img {
+    width: 20px;
   }
 
   /* Achievements Mobile */
