@@ -54,7 +54,7 @@
     gap: 30px;
 }
 
-.navLinks a {
+.navLinks a, .mobileNavlinks a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
@@ -74,4 +74,97 @@
 }
 .arrowIcon {
     color:#00000061;
+}
+
+.mobileNav,
+.mobileNavlinks, .sideBar {
+  display: none;
+}
+
+/* --- Media Queries --- */
+@media(max-width:567px){
+    .navbar{
+        display: none;
+    }
+
+    .mobileNav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 3em 1em 1em  1em;
+        z-index: 1000;
+    }
+
+    .menuIcon, .closeIcon{
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .sideBar{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        padding: 1.5em 2em;
+        display: block;
+        background-color: #fff;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .mobileNavlinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-top:3em;
+    }
+
+    .mobileNavActive{
+        left: 0;
+    }
+
+    .closeMenu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+
+    .closeMenu img{
+        width: 50px;
+    }
+
+    .sideBarBtns{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        gap: 20px;
+    }
+
+    .sideBarBtns button{
+        padding: 15px;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        font-family: 'Nunito', sans-serif;
+        background-color: transparent;
+        font-weight: 700;
+    }
+
+    .sideBarBtns button:last-of-type{
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+}
+
+/* --- Extra Small Devices --- */
+@media(max-width:480px){
+    .sideBar{
+        width: 80%;
+    }
 }

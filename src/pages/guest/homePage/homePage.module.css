@@ -138,6 +138,10 @@ body{
     font-weight: 700;
 }
 
+.gsteeCarousel{
+    display: none;
+}
+
 /*perks section*/
 .perks_section{
     display: flex;
@@ -155,7 +159,8 @@ body{
 
 .perks_description{
     margin: 0 auto;
-    max-width: 500px;
+    width: 100%;
+    max-width: 700px;
     padding: 1em 2em;
     text-align: center;
 }
@@ -213,6 +218,7 @@ body{
 /*cta section*/
 .cta_section{
     color: var(--neutral-white);
+    text-align: center;
 }
 
 /*newsletter section*/
@@ -245,14 +251,262 @@ body{
     padding: 14px 20px;
     border: 1px solid #A7A7A7;
     border-radius: 20px;
-    width: 400px;
+    width: 700px;
     cursor: pointer;
 }
 
 .subscription_input button{
     background-color: var(--primary-color);
-    width: 200px;
+    width: 300px;
     margin-left: 3em;
     font-weight: 500;
     color: var(--neutral-white);
+}
+
+/* ---- Media Queries ---- */
+
+/* --- Extra Large Devices ---*/
+@media(max-width:1200px){
+    .hero_section div{
+        width: 80%;
+    }
+
+    .hero_section div h1{
+        font-size: 3.7rem;
+    }
+
+    .home_page h2{
+        font-size: 3.2rem;
+    }
+
+    .home_page h3{
+        font-size: 2rem;
+    }
+
+    .home_page h4{
+        font-size: 1rem;
+    }
+
+    .gstee_header p{
+        font-size: 1.8rem;
+    }
+
+    .cta_section h2{
+        font-size: 2.7rem;
+    }
+}
+
+/* --- Large Devices --- */
+@media(max-width:992px){
+    .cta_section h2{
+        font-size: 2.5rem;
+    }
+
+    .subscription_input button{
+        margin-top: 2em;
+    }
+}
+
+/* --- Medium Devices --- */
+@media(max-width:768px){
+     .hero_section div{
+        width: 100%;
+    }
+
+    .perks_container{
+        grid-template-columns: 1fr;
+    }
+    
+
+    .perks_container > *:nth-child(1) { order: 2; } 
+    .perks_container > *:nth-child(2) { order: 1; } 
+
+    .perks_container > *:nth-child(3) { order: 3; } 
+    .perks_container > *:nth-child(4) { order: 4; } 
+
+    .perks_container > *:nth-child(5) { order: 6; } 
+    .perks_container > *:nth-child(6) { order: 5; } 
+
+    .testimonial_container{
+        grid-template-columns: 1fr;
+    }
+
+    .cta_section h2{
+        font-size: 2rem;
+    }
+
+}
+
+/* --- Small Devices --- */
+@media(max-width:576px){
+   .home_page{
+    padding-top: 120px;
+   }
+
+   .hero_section div h1{
+     font-size: 2.2rem;
+   }
+
+   .gstee_container{
+    display: none;
+   }
+
+   .gsteeCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2em 1em;
+   }
+
+   .gsteeCard {
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .gsteeCard img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+
+  .perks_container{
+    padding: 4em 1em;
+  }
+
+  .navigationDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .navigationDots span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .navigationDots .activeDot {
+    background-color: var(--primary-color);
+  }
+
+   .cta_section h2{
+    line-height: 30px;
+   }
+
+   .newsletter_header{
+    width: 100%;
+   }
+
+   .subscription_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   }
+
+   .subscription_input input, .subscription_input button{
+    padding: 20px 20px;
+    border-radius: 10px; 
+    width: 500px; 
+   }
+
+   .subscription_input button{
+    margin-left: 0;
+    margin-top: 0;
+   }
+
+}
+
+/* --- Extra Small Devices --- */
+
+@media(max-width:480px){
+    .home_page h2{
+        font-size: 2rem;
+    }
+
+    .hero_section div h1{
+        font-size: 1.8rem;
+    }
+
+    .hero_section div p{
+        font-size: 1rem;
+    }
+
+    .gstee_header, .perks_header{
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .gstee_header p, .perks_header p{
+        font-size: 1.5rem;
+    }
+
+    .gstee_header p:first-of-type{
+        font-size: 1.6rem;
+    }
+
+    .gsteeCarousel{
+        padding: 2em 0;
+        width: 100%;
+    }
+
+    .gsteeCard{
+        max-width: 700px;
+        padding: 4em;
+    }
+
+    .perks_description{
+        max-width: 700px;
+    }
+
+    .testimonial_section, .faq_section, .cta_section, .newsletter_section{
+        padding: 2em;
+    }
+
+    .newsletter_header p{
+        font-size: 1.5rem;
+    }
+
+     .subscription_input input, .subscription_input button{
+        width: 350px;
+     }
+}
+
+@media(max-width:380px){
+     .home_page h2{
+        font-size: 1.7rem;
+    }
+
+    .hero_section div h1{
+        font-size: 1.5rem;
+    }
+
+     .gstee_header p:first-of-type{
+        font-size: 1.4rem;
+    }
+
+    .gstee_header p, .perks_header p{
+        font-size: 1.3rem;
+    }
+
+    .cta_btn{
+        padding: 15px 40px;
+        font-size: 1rem;
+    }
+
+    .subscription_input input, .subscription_input button{
+        width: 320px;
+    }
+
+    .newsletter_header p{
+        font-size: 1.3rem;
+    }
 }
