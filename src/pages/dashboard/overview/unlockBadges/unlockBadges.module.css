@@ -1,43 +1,75 @@
-.container{
+.container {
     width: 100%;
     border: 1px solid #00000080;
     border-radius: 10px;
     padding: 30px 20px 10px;
     font-family: 'Nunito';
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.header h3{
+
+.header h3 {
     font-size: 20px;
     font-weight: 700;
 }
-.header span{
+
+.header span {
     font-size: 15px;
     color: #440B7F;
     font-weight: 700;
 }
-.badge{
-    display: flex;
+
+.badge {
+    display: grid;
+    grid-template-columns: 50px auto;
     align-items: center;
     gap: 25px;
     margin-bottom: 20px;
 }
-.badge h3{
+
+.badge h3 {
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.5px;
 }
-.badge p{
+
+.badge p {
     font-weight: 500;
     font-size: 15px;
     color: #00000080;
 }
-.circle{
-    width: 50px;
-    height: 50px; 
+
+.circle {
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
+}
+
+.overflow {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        border: none;
+        padding: 10px 0px 10px;
+    }
+
+    .badgeContainer {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 40px;
+    }
+
+    .badge h3, .badge p {
+        white-space: nowrap;
+    }
 }
