@@ -64,8 +64,6 @@
 .content form .inputBox input:focus {
     border-color: var(--primary-color);
     border-width: 1.5px;
-
-    padding: 14.5px 15px;
 }
 
 .content form .twoInputBox {
@@ -190,17 +188,25 @@ div.bottomLink {
     }
 
     .content h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
         text-align: center;
     }
 
     .content>p {
         text-align: center;
+        font-size: 14px;
     }
+
+    .content form {
+        margin-top: 15px;
+    }
+
 
     .content form .inputBox input {
         border-radius: 7px;
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
     .content form .twoInputBox {
@@ -208,20 +214,46 @@ div.bottomLink {
         align-items: flex-start;
     }
 
+    .content form .inputBox label {
+        font-size: 14px;
+    }
+
     .content form .twoInputBox input {
         width: 100%;
+    }
+
+    .eyeIcon {
+        top: 52%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    .content form span {
+        font-size: 14px;
     }
 
     .content form button,
     button.btn {
         border-radius: 7px;
+        padding: 8px 15px;
+        margin-top: 15px;
+        font-size: 15px;
     }
-
 
     .content img.keyIcon {
         display: block;
         margin: auto;
         margin-bottom: 10px;
     }
+
+    .altSignup {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .altSignup img {
+        width: 15px;
+    }
+
 
 }
