@@ -1,14 +1,14 @@
 .page {
 	width: 100%;
 	font-family: 'Nunito';
-	padding: 30px 6%;
+	padding: 20px 15px;
 }
 
 .itemSection {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
-.page h3 {
+.itemSection h3 {
 	margin-bottom: 20px;
 	font-size: 20px;
 }
@@ -49,6 +49,9 @@
 .shop {
 	margin-top: 40px;
 }
+.shop h3{
+	margin-bottom: 20px;
+}
 
 .itemRow {
 	display: flex;
@@ -60,7 +63,7 @@
 	margin-bottom: 20px;
 }
 
-.itemRow > div {
+.itemRow>div {
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -90,6 +93,14 @@
 
 /* tablet */
 @media only screen and (min-width: 576px) {
+	.page {
+		padding: 30px 6%;
+	}
+
+	.itemSection {
+		margin-top: 30px;
+	}
+
 	.item {
 		padding: 30px;
 	}
@@ -109,11 +120,12 @@
 	.item p {
 		font-size: 20px;
 	}
+
 	.itemRow {
 		padding: 15px 30px;
 	}
 
-	.itemRow > div {
+	.itemRow>div {
 		gap: 15px;
 		font-size: 16px;
 	}

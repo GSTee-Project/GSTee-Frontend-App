@@ -1,36 +1,37 @@
-
-:root{
-    --container-color:#EDE7F6;
+:root {
+    --container-color: #EDE7F6;
     --newsletter: #F8F7F7;
     --border-color: #F2F2F2;
 }
 
-body{
+body {
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-.home_page{
+.home_page {
     padding-top: 80px;
 }
 
 /*headers*/
-.home_page h2{
+.home_page h2 {
     font-size: 3.4rem;
     font-weight: 700;
     line-height: 80px;
 }
-.home_page h3{
+
+.home_page h3 {
     font-size: 2.2rem;
 }
-.home_page h4{
+
+.home_page h4 {
     font-size: 1.2rem;
     font-weight: 800;
 }
 
 /*hero section*/
-.hero_section{
+.hero_section {
     background: linear-gradient(180deg, #440B7F 8.66%, #8611FF 64.43%);
     position: relative;
     display: flex;
@@ -38,27 +39,27 @@ body{
     align-items: center;
     color: var(--neutral-white);
     padding: 8em 3em 7em;
-    height: 670px;   
+    height: 670px;
 }
 
-.hero_section div{
+.hero_section div {
     width: 60%;
     text-align: center;
 }
 
-.hero_section div h1{
+.hero_section div h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 80px;
 }
 
-.hero_section div p{
+.hero_section div p {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 40px;
 }
 
-.hero_video_container img{
+.hero_video_container img {
     width: 70%;
     position: absolute;
     left: 50%;
@@ -67,8 +68,9 @@ body{
 }
 
 /*cta button*/
-.cta_btn{
-    color:var(--primary-color);
+.cta_btn {
+    font-family: 'Nunito';
+    color: var(--primary-color);
     background-color: var(--neutral-white);
     padding: 18px 43px;
     border: none;
@@ -80,7 +82,7 @@ body{
 }
 
 /*gstee section*/
-.gstee_section{
+.gstee_section {
     margin-top: 13em;
     padding: 2em;
     padding-top: 7em;
@@ -89,67 +91,75 @@ body{
     align-items: center;
     width: 100%;
 }
-.gstee_header, .perks_header{
+
+.gstee_header,
+.perks_header {
     text-align: center;
     width: 80%;
 }
-.gstee_header p:first-of-type{
+
+.gstee_header p:first-of-type {
     font-size: 3rem;
     font-weight: 700;
 }
-.gstee_header p, .perks_header p{
+
+.gstee_header p,
+.perks_header p {
     font-size: 2rem;
     font-weight: 300;
     line-height: 50px;
     margin-top: 0.5em;
 }
+
 .gstee_overflow_container {
-  width: 100%;
-  overflow-x: auto;
-  scrollbar-width: none;
-  margin-top: 5em;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-top: 5em;
 }
+
 .gstee_container {
-  display: flex;
-  width: fit-content;
-  margin: auto;
-  gap: 20px;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 20px;
 }
 
-.gstee_container  div {
-  flex: 0 0 300px;
-  background-color: var(--container-color);
-  border-radius: 15px;
-  padding: 2em;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.gstee_container div {
+    flex: 0 0 300px;
+    background-color: var(--container-color);
+    border-radius: 15px;
+    padding: 2em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.gstee_container div img{
+.gstee_container div img {
     width: 70px;
     height: 70px;
 }
 
-.gstee_container div h3{
+.gstee_container div h3 {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.gsteeCarousel{
+.gsteeCarousel {
     display: none;
 }
 
 /*perks section*/
-.perks_section{
+.perks_section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 7em;
 }
-.perks_container{
+
+.perks_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -157,7 +167,7 @@ body{
     padding: 4em;
 }
 
-.perks_description{
+.perks_description {
     margin: 0 auto;
     width: 100%;
     max-width: 700px;
@@ -165,49 +175,56 @@ body{
     text-align: center;
 }
 
-.perks_description p{
+.perks_description p {
     font-size: 1.5rem;
     font-weight: 300;
 }
 
-.perks_image img{
+.perks_image img {
     width: 100%;
 }
 
 /*testimonials section*/
-.testimonial_section, .faq_section, .cta_section, .newsletter_section{
+.testimonial_section,
+.faq_section,
+.cta_section,
+.newsletter_section {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3em;
 }
-.testimonial_section h3{
+
+.testimonial_section h3 {
     color: var(--neutral-white);
 }
-.testimonial_container{
+
+.testimonial_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 3em;
 }
-.testimonial{
+
+.testimonial {
     background-color: var(--neutral-white);
     border-radius: 10px;
-    padding: 1.2em;   
+    padding: 1.2em;
 }
-.user_container{
+
+.user_container {
     display: flex;
     gap: 10px;
     margin-top: 0.5em;
 }
 
-.user_container p:first-of-type{
+.user_container p:first-of-type {
     font-size: 1.1rem;
     font-weight: 800;
 }
 
-.testimonial_section a{
+.testimonial_section a {
     margin-top: 2em;
     color: var(--neutral-white);
     font-size: 1.2rem;
@@ -216,37 +233,39 @@ body{
 
 
 /*cta section*/
-.cta_section{
+.cta_section {
     color: var(--neutral-white);
     text-align: center;
 }
 
 /*newsletter section*/
-.newsletter_section{
+.newsletter_section {
     background-color: var(--newsletter);
     text-align: center;
 }
 
-.newsletter_header{
+.newsletter_header {
     width: 60%;
 }
-.newsletter_header p:first-of-type{
+
+.newsletter_header p:first-of-type {
     font-size: 1.1rem;
     color: #9C9A9A;
     font-weight: 400;
 }
 
-.newsletter_header p{
+.newsletter_header p {
     font-size: 2rem;
     font-weight: 500;
     margin-top: 0.5em;
 }
 
-.subscription_input{
+.subscription_input {
     margin-top: 3em;
 }
 
-.subscription_input input, .subscription_input button{
+.subscription_input input,
+.subscription_input button {
     font-family: 'Nunito', sans-serif;
     padding: 14px 20px;
     border: 1px solid #A7A7A7;
@@ -255,7 +274,7 @@ body{
     cursor: pointer;
 }
 
-.subscription_input button{
+.subscription_input button {
     background-color: var(--primary-color);
     width: 300px;
     margin-left: 3em;
@@ -266,247 +285,290 @@ body{
 /* ---- Media Queries ---- */
 
 /* --- Extra Large Devices ---*/
-@media(max-width:1200px){
-    .hero_section div{
+@media(max-width:1200px) {
+    .hero_section div {
         width: 80%;
     }
 
-    .hero_section div h1{
+    .hero_section div h1 {
         font-size: 3.7rem;
     }
 
-    .home_page h2{
+    .home_page h2 {
         font-size: 3.2rem;
     }
 
-    .home_page h3{
+    .home_page h3 {
         font-size: 2rem;
     }
 
-    .home_page h4{
+    .home_page h4 {
         font-size: 1rem;
     }
 
-    .gstee_header p{
+    .gstee_header p {
         font-size: 1.8rem;
     }
 
-    .cta_section h2{
+    .cta_section h2 {
         font-size: 2.7rem;
     }
 }
 
 /* --- Large Devices --- */
-@media(max-width:992px){
-    .cta_section h2{
+@media(max-width:992px) {
+    .cta_section h2 {
         font-size: 2.5rem;
     }
 
-    .subscription_input button{
+    .subscription_input button {
         margin-top: 2em;
     }
 }
 
 /* --- Medium Devices --- */
-@media(max-width:768px){
-     .hero_section div{
+@media(max-width:768px) {
+    .hero_section div {
         width: 100%;
     }
 
-    .perks_container{
-        grid-template-columns: 1fr;
-    }
-    
-
-    .perks_container > *:nth-child(1) { order: 2; } 
-    .perks_container > *:nth-child(2) { order: 1; } 
-
-    .perks_container > *:nth-child(3) { order: 3; } 
-    .perks_container > *:nth-child(4) { order: 4; } 
-
-    .perks_container > *:nth-child(5) { order: 6; } 
-    .perks_container > *:nth-child(6) { order: 5; } 
-
-    .testimonial_container{
+    .perks_container {
         grid-template-columns: 1fr;
     }
 
-    .cta_section h2{
+
+    .perks_container>*:nth-child(1) {
+        order: 2;
+    }
+
+    .perks_container>*:nth-child(2) {
+        order: 1;
+    }
+
+    .perks_container>*:nth-child(3) {
+        order: 3;
+    }
+
+    .perks_container>*:nth-child(4) {
+        order: 4;
+    }
+
+    .perks_container>*:nth-child(5) {
+        order: 6;
+    }
+
+    .perks_container>*:nth-child(6) {
+        order: 5;
+    }
+
+    .testimonial_container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta_section h2 {
         font-size: 2rem;
     }
 
 }
 
 /* --- Small Devices --- */
-@media(max-width:576px){
-   .home_page{
-    padding-top: 120px;
-   }
+@media(max-width:576px) {
 
-   .hero_section div h1{
-     font-size: 2.2rem;
-   }
+    .hero_section div h1 {
+        font-size: 2.2rem;
+    }
 
-   .gstee_container{
-    display: none;
-   }
+    .gstee_container {
+        display: none;
+    }
 
-   .gsteeCarousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 2em 1em;
-   }
+    .gsteeCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 2em 1em;
+    }
 
-   .gsteeCard {
-    background-color: var(--container-color);
-    padding: 2rem;
-    border-radius: 15px;
-    max-width: 320px;
-    text-align: center;
-  }
+    .gsteeCard {
+        background-color: var(--container-color);
+        padding: 2rem;
+        border-radius: 15px;
+        max-width: 320px;
+        text-align: center;
+    }
 
-  .gsteeCard img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 1rem;
-  }
+    .gsteeCard img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
 
-  .perks_container{
-    padding: 4em 1em;
-  }
+    .perks_container {
+        padding: 4em 1em;
+    }
 
-  .navigationDots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 1rem;
-  }
+    .navigationDots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1rem;
+    }
 
-  .navigationDots span {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+    .navigationDots span {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 
-  .navigationDots .activeDot {
-    background-color: var(--primary-color);
-  }
+    .navigationDots .activeDot {
+        background-color: var(--primary-color);
+    }
 
-   .cta_section h2{
-    line-height: 30px;
-   }
+    .cta_section h2 {
+        line-height: 30px;
+    }
 
-   .newsletter_header{
-    width: 100%;
-   }
+    .newsletter_header {
+        width: 100%;
+    }
 
-   .subscription_input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-   }
+    .subscription_input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
-   .subscription_input input, .subscription_input button{
-    padding: 20px 20px;
-    border-radius: 10px; 
-    width: 500px; 
-   }
+    .subscription_input input,
+    .subscription_input button {
+        padding: 20px 20px;
+        border-radius: 10px;
+        width: 500px;
+    }
 
-   .subscription_input button{
-    margin-left: 0;
-    margin-top: 0;
-   }
+    .subscription_input button {
+        margin-left: 0;
+        margin-top: 0;
+    }
 
 }
 
 /* --- Extra Small Devices --- */
 
-@media(max-width:480px){
-    .home_page h2{
+@media(max-width:480px) {
+    .hero_section {
+        padding: 8em 2em 7em;
+        height: 550px;
+    }
+
+    .home_page h2 {
         font-size: 2rem;
     }
 
-    .hero_section div h1{
+    .hero_section div h1 {
+        font-size: 2rem;
         font-size: 1.8rem;
+        margin-bottom: 20px;
     }
 
-    .hero_section div p{
-        font-size: 1rem;
+    .hero_section div p {
+        font-size: 1.2rem;
+        line-height: 1.6;
     }
 
-    .gstee_header, .perks_header{
+    .gstee_section {
+        margin-top: 5em;
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gstee_header,
+    .perks_header {
         width: 100%;
         padding: 0.5em;
     }
 
-    .gstee_header p, .perks_header p{
+    .gstee_header p,
+    .perks_header p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .gstee_header p:first-of-type {
         font-size: 1.5rem;
     }
 
-    .gstee_header p:first-of-type{
-        font-size: 1.6rem;
-    }
-
-    .gsteeCarousel{
+    .gsteeCarousel {
         padding: 2em 0;
         width: 100%;
     }
 
-    .gsteeCard{
+    .gsteeCard {
         max-width: 700px;
         padding: 4em;
     }
 
-    .perks_description{
+    .perks_description {
         max-width: 700px;
     }
 
-    .testimonial_section, .faq_section, .cta_section, .newsletter_section{
-        padding: 2em;
+    .perks_description h3 {
+        font-size: 2rem;
     }
-
-    .newsletter_header p{
-        font-size: 1.5rem;
-    }
-
-     .subscription_input input, .subscription_input button{
-        width: 350px;
-     }
-}
-
-@media(max-width:380px){
-     .home_page h2{
-        font-size: 1.7rem;
-    }
-
-    .hero_section div h1{
-        font-size: 1.5rem;
-    }
-
-     .gstee_header p:first-of-type{
-        font-size: 1.4rem;
-    }
-
-    .gstee_header p, .perks_header p{
+    .perks_description p {
         font-size: 1.3rem;
     }
 
-    .cta_btn{
+    .testimonial_section,
+    .faq_section,
+    .cta_section,
+    .newsletter_section {
+        padding: 2em;
+    }
+
+    .newsletter_header p {
+        font-size: 1.5rem;
+    }
+
+    .subscription_input input,
+    .subscription_input button {
+        width: 350px;
+    }
+}
+
+@media(max-width:380px) {
+
+    .home_page h2 {
+        font-size: 1.7rem;
+    }
+
+    .gstee_header p:first-of-type {
+        font-size: 1.4rem;
+    }
+
+    .gstee_header p,
+    .perks_header p {
+        font-size: 1.3rem;
+    }
+
+    .cta_btn {
         padding: 15px 40px;
         font-size: 1rem;
     }
 
-    .subscription_input input, .subscription_input button{
+    .subscription_input input,
+    .subscription_input button {
         width: 320px;
     }
 
-    .newsletter_header p{
+    .newsletter_header p {
         font-size: 1.3rem;
     }
 }

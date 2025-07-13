@@ -54,12 +54,12 @@ const ForgotPassword = ({ changeAuthMode }) => {
             {step === 3 &&
                 <div className={styles.content} style={{ margin: '40px 0' }}>
                     <img src={keyIcon} alt="" className={styles.keyIcon} />
-                    <h3>Set new password</h3>
+                    <h3>Set New password</h3>
                     <p>Must be at least 8 characters</p>
                     <form action="">
                         <div className={styles.inputBox}>
                             <label htmlFor="password">Password</label>
-                            <input type={showPassword ? 'text' : 'password'} name="password" id="password" placeholder='Enter your Password' />
+                            <input type={showPassword ? 'text' : 'password'} name="password" id="password" placeholder='Enter New Password' />
                             {showPassword ?
                                 <IoEyeOffOutline className={styles.eyeIcon} size={22} onClick={togglePassword} />
                                 :
@@ -68,7 +68,7 @@ const ForgotPassword = ({ changeAuthMode }) => {
                         </div>
                         <div className={styles.inputBox}>
                             <label htmlFor="password">Confirm Password</label>
-                            <input type={showPassword ? 'text' : 'password'} name="password" id="password" placeholder='Enter your Password' />
+                            <input type={showPassword ? 'text' : 'password'} name="password" id="password" placeholder='Repeat Password' />
                             {showPassword ?
                                 <IoEyeOffOutline className={styles.eyeIcon} size={22} onClick={togglePassword} />
                                 :

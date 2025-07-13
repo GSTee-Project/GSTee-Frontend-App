@@ -10,7 +10,7 @@ const ModalWrapper = ({ open, onClose, width = '550px', children, disableOverlay
     };
 
     return (
-        <Dialog open={open} onClose={disableOverlayClose ? handleClose : onClose} scroll="body" fullWidth sx={{ '& .MuiDialog-paper': { width: width, minWidth: '550px' }, }} className={styles.modal}>
+        <Dialog open={open} onClose={disableOverlayClose ? handleClose : onClose} scroll="body" fullWidth sx={{ '& .MuiDialog-paper': { width: width, maxWidth: '80%' }, }} className={styles.modal}>
             <DialogTitle>
                 {showCloseBtn &&
                     <IconButton onClick={onClose} sx={{ position: 'absolute', top: 8, right: 8 }}>
@@ -18,7 +18,7 @@ const ModalWrapper = ({ open, onClose, width = '550px', children, disableOverlay
                     </IconButton>
                 }
             </DialogTitle>
-            <DialogContent>
+            <DialogContent style={{padding: '0px'}}>
                 {children}
             </DialogContent>
         </Dialog>
