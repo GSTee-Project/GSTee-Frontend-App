@@ -30,5 +30,8 @@
     .page {
         padding: 20px 15px;
     }
+    .content{
+        margin-top: 25px;
+    }
 
 }
