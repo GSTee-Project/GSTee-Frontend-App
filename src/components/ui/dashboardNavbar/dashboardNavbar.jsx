@@ -29,7 +29,7 @@ const DashboardNavbar = ({ showMenu = true, setIsMobileSidebarOpen }) => {
   return (
     <div className={styles.navbar} onClick={() => { if (showDropDown) setShowDropDown(false) }}>
       <div className={styles.smallContainer}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="" onClick={() => navigate('/')} />
       </div>
 
       {showMenu &&

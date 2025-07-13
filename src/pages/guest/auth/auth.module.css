@@ -206,7 +206,7 @@ div.bottomLink {
     .content form .inputBox input {
         border-radius: 7px;
         padding: 10px 15px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .content form .twoInputBox {
@@ -215,7 +215,7 @@ div.bottomLink {
     }
 
     .content form .inputBox label {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .content form .twoInputBox input {
@@ -229,15 +229,15 @@ div.bottomLink {
     }
 
     .content form span {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .content form button,
     button.btn {
         border-radius: 7px;
-        padding: 8px 15px;
+        padding: 11px 15px;
         margin-top: 15px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .content img.keyIcon {
@@ -248,7 +248,7 @@ div.bottomLink {
 
     .altSignup {
         padding: 8px 10px;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .altSignup img {
