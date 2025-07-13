@@ -1,9 +1,34 @@
-.page{
+.page {
     padding: 20px 30px;
 }
-.content{
+
+.content {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 65% 32%;
     column-gap: 3%;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .content {
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+
+    .leaderboardContainer {
+        display: none;
+    }
+
+    .mt {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page {
+        padding: 20px 15px;
+    }
+
 }

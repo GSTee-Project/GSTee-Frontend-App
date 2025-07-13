@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ongoing.module.css'
-import lessonImg from '../../../../assets/images/lesson_image.jpg'
+// import lessonImg from '../../../../assets/images/lesson_image.jpg'
 import cupStarImg from '../../../../assets/images/cup-star.svg'
 import streak from '../../../../assets/images/streak.svg'
 // import splash from '../../../../assets/images/splash.svg'
@@ -10,7 +10,8 @@ const Ongoing = () => {
     return (
         <div className={styles.page}>
             <div className={styles.ongoing}>
-                <img src={lessonImg} alt="" />
+                <div className={styles.imageContainer}></div>
+                {/* <img src={lessonImg} alt="" /> */}
                 <h3>Ongoing Lesson</h3>
                 <h5>Feasibility Studies</h5>
                 <p>3/15 Slides Completed</p>

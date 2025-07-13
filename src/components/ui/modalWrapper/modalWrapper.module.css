@@ -5,3 +5,8 @@
     color: black;
     font-weight: 700;
 }
+@media screen and (max-width: 500px) {
+    .dialogContent{
+        padding: 10px;
+    }
+}

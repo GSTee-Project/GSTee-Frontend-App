@@ -37,16 +37,18 @@ const UnlockBadges = () => {
         <h3>Unlock Badges</h3>
         <span>View All</span>
       </div>
-      <div>
-        {badges_data.map((badge, index) => (
-          <div key={index} className={styles.badge}>
-            <div style={{ backgroundColor: badge.color }} className={styles.circle}></div>
-            <div>
-              <h3>{badge.name}</h3>
-              <p>{badge.month}</p>
+      <div className={styles.overflow}>
+        <div className={styles.badgeContainer}>
+          {badges_data.map((badge, index) => (
+            <div key={index} className={styles.badge}>
+              <div style={{ backgroundColor: badge.color }} className={styles.circle}></div>
+              <div>
+                <h3>{badge.name}</h3>
+                <p>{badge.month}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

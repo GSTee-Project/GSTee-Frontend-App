@@ -10,3 +10,13 @@
 .image {
     width: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        gap: 10px;
+    }
+
+    .image {
+        width: 15px;
+    }
+}
