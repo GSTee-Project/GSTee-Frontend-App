@@ -10,13 +10,7 @@ const HelpCenter = () => {
   return (
     <>
       <div className={styles.title}>Help Center</div>
-      {/* <div className={styles.searchBox}>
-        <input type="text" placeholder="Search" />
-        <FiSearch className={styles.searchIcon} />
-      </div> */}
-
       <SearchBox />
-
       <h4 className={styles.sectionHeader}>Popular Help Topics</h4>
 
       <div className={styles.topicSection}>

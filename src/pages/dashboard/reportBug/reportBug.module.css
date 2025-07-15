@@ -12,7 +12,7 @@
 .bugReportForm {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 35px;
 }
 
 .formGroup {
@@ -22,7 +22,7 @@
 }
 
 .formLabel {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   display: block;
   margin-bottom: 5px;
@@ -112,4 +112,23 @@
   margin-top: 10px;
   transition: background-color 0.2s ease;
   font-family: 'Inter';
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .bugReportContainer {
+    margin-top: 1.4rem;
+  }
+
+  .bugReportTitle {
+    display: none;
+  }
+
+  .formLabel {
+    font-size: 20px;
+  }
+
+
+
 }

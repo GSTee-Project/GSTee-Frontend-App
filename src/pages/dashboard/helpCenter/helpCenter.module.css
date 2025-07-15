@@ -3,34 +3,9 @@
     font-weight: 700;
 }
 
-.searchBox {
-    position: relative;
-    margin: 1rem 0;
-}
-
-.searchBox input {
-    padding: 0.7rem 1rem;
-    border-radius: 10px;
-    font-size: 18px;
-    width: 100%;
-    border: 1px solid #0000000D;
-    background-color: #0000000D;
-    border-radius: 10px;
-    font-weight: 300;
-    font-family: 'Nunito';
-}
-
-.searchIcon {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-    font-size: 20px;
-}
 
 .sectionHeader {
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
@@ -39,7 +14,7 @@
 
 .topicSection h5 {
     margin-bottom: 1.3rem;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -47,30 +22,35 @@
     list-style: none;
     padding-left: 1rem;
     margin: 0;
-    margin-bottom: 2.2rem;
+    margin-bottom: 3.4rem;
 }
 
 .topicSection ul li::before {
     content: '●';
     color: black;
     display: inline-block;
-    width: 1rem;
+    width: 1.8rem;
     margin-left: -1rem;
     margin-right: .5rem;
+    font-size: 2.5rem;
+    transform: translateY(-4%);
 }
 
 .topicSection li {
     cursor: pointer;
     margin-bottom: 1.2rem;
-    font-size: 18px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
 }
 
 .contactHeader {
     color: var(--primary-color);
     font-weight: 600;
-    margin-top: 2rem;
+    margin-top: 5.8rem;
     margin-bottom: 1.3rem;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 .contactList {
@@ -85,5 +65,46 @@
     gap: 0.5rem;
     cursor: pointer;
     margin-bottom: 1.2rem;
-    font-size: 18px;
+    font-size: 24px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+
+    .title {
+        display: none;
+    }
+
+    .sectionHeader {
+        font-size: 28px;
+    }
+
+    .topicSection h5 {
+        font-size: 20px;
+    }
+
+    .topicSection ul {
+    margin-bottom: 2.5rem;
+}
+
+
+    .topicSection ul li::before {
+        width: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .topicSection li {
+        font-size: 20px;
+    }
+
+    .contactHeader {
+        margin-top: 3.4rem;
+        font-size: 24px;
+    }
+
+    .contactList li {
+        font-size: 20px;
+    }
+
 }
