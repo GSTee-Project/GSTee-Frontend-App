@@ -14,6 +14,7 @@
 }
 
 
+
 .left h3 {
     font-size: 25px;
     font-weight: 700;
@@ -25,8 +26,65 @@
     font-size: 16px;
 }
 
+/* --- profile section ---  */
+.profileSection {
+    position: relative;
+    width: fit-content;
+    display: none;
+    gap: 5px;
+    align-items: center;
+    /* background-color: red; */
+}
 
-@media screen and (max-width: 600px) {
+.bellIcon {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.bellIcon:hover,
+.bellIcon.purple {
+    color: var(--primary-color);
+}
+
+.userIcon {
+    color: #00000061;
+    cursor: pointer;
+}
+
+.arrowIcon {
+    color: #00000061;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.arrowIcon:hover {
+    color: var(--primary-color);
+}
+
+.dropDownBox {
+    position: absolute;
+    top: 130%;
+    left: 30%;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 150px;
+}
+
+.dropDownBox p {
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.dropDownBox p:hover {
+    background-color: #eee;
+}
+
+
+@media screen and (max-width: 500px) {
     .section {
         flex-direction: column;
         gap: 20px;
@@ -40,6 +98,14 @@
         justify-content: flex-end;
         gap: 15px;
     }
+    .left{
+        /* background-color: green; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 7px;
+    }
 
     .left h3 {
         font-size: 22px;
@@ -47,6 +113,10 @@
 
     .left p {
         font-size: 13px;
+    }
+
+    .profileSection {
+        display: flex;
     }
 
 }
