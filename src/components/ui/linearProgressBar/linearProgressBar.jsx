@@ -10,6 +10,9 @@ const CustomLinearProgress = styled(LinearProgress)(() => ({
     borderRadius: 10,
     backgroundColor: 'var(--primary-color)',
   },
+   '@media (max-width: 768px)': {
+    height: 5,
+  },
 }));
 
 const LinearProgressBar = ({ value }) => {
