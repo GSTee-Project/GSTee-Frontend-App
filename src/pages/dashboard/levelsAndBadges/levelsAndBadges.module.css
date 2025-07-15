@@ -132,6 +132,11 @@
     margin-bottom: 1rem;
 }
 
+.barIcon {
+    width: 86px;
+    height: 90px;
+}
+
 .lockCircle {
     width: 6.25rem;
     height: 6.25rem;
@@ -161,7 +166,7 @@
     opacity: 0.6;
 }
 
-/* Level */
+/* Level Milestone */
 
 .levelContainer {
     display: grid;
@@ -191,7 +196,7 @@
     font-size: 18px;
 }
 
-/*  */
+/* Info */
 .more {
     margin: 5rem 0;
 }
@@ -220,4 +225,263 @@ button.questBtn {
     font-family: 'Nunito';
     border: none;
     cursor: pointer;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+/* Progress Level Mobile */
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 20px 15px;
+    }
+
+    .levelProgressDiv {
+        margin-top: 20px;
+        padding: 10px;
+        gap: 14px;
+        border-radius: 3px;
+    }
+
+    .progressLevelTitle {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .levelDiv1 {
+        padding: 12px 16px;
+        border-radius: 3.19px;
+        margin-top: 0.5rem;
+    }
+
+    .level {
+        font-size: 7.65px;
+    }
+
+    .xp {
+        font-size: 15.3px;
+        margin: 5px 0;
+    }
+
+    .nextLevelXp {
+        font-size: 7.65px;
+        margin-top: 5px;
+    }
+
+    .statCard {
+        padding: 8px;
+        border-radius: 3.6px;
+    }
+
+    .statValue {
+        font-size: 10.13px;
+    }
+
+    .statIcon {
+        width: 10.79px;
+        height: 10.79px;
+        margin-top: auto;
+        transform: translateY(-5px);
+    }
+
+    .statLabel {
+        font-size: 6.08px
+    }
+
+    .divider {
+        margin: 0.5rem 0;
+    }
+
+    .statRow {
+        gap: 0.5rem;
+    }
+
+    /* Badge Mobile*/
+    .badgeSection {
+        margin: 1.2rem 0;
+    }
+
+
+    .badgeHeader {
+        font-size: 15px;
+        margin-bottom: .5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .85rem;
+    }
+
+    .card {
+        border-radius: 4.24px;
+        padding: 16px 7px;
+    }
+
+
+    .badgeIcon {
+        font-size: 2.7rem;
+    }
+
+    .barIcon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .lockCircle {
+        width: 2.65rem;
+        height: 2.65rem;
+    }
+
+    .lockIcon {
+        font-size: 1.4rem;
+    }
+
+    .badgeTitle {
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+    .badgeSubtext {
+        color: var(--primary-color);
+        font-size: 9px;
+    }
+
+    /* Milestone Mobile */
+
+    .levelContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: .9rem;
+        margin-top: .9rem;
+    }
+
+    .levelCard {
+        border-radius: 5.91px;
+        padding: 1.1rem 1.4rem;
+        gap: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .level {
+        font-size: 11.83px;
+    }
+
+    .levelDesc {
+        font-size: 11.83px;
+    }
+
+    /* Info */
+    .more {
+        margin: 5rem 0;
+    }
+
+    .info {
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .infoText {
+        font-size: 14px;
+        margin-bottom: 0.3rem;
+    }
+
+    .infoDesc {
+        font-size: 8px;
+    }
+
+    button.questBtn {
+        padding: 8px 10px;
+        border-radius: 4px;
+        font-size: 8px;
+        margin-right: 0.5rem;
+    }
+}
+
+/* TABLET RESPONSIVENESS */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .levelProgressDiv {
+        margin-top: 10px;
+        padding: 28px 26px;
+        gap: 25px;
+        border-radius: 3px;
+    }
+
+    .levelDiv1 {
+        margin-top: 1rem;
+        padding: 28px 30px;
+    }
+
+    .level {
+        font-size: 15px;
+    }
+
+    .xp {
+        font-size: 30px;
+    }
+
+    .nextLevelXp {
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .statCard {
+        padding: 26px 22px;
+
+    }
+
+    .statValue {
+        font-size: 18px;
+    }
+
+    .statIcon {
+        width: 23px;
+        height: 23px;
+    }
+
+    .statLabel {
+        font-size: 13px
+    }
+
+    .divider {
+        margin: 1rem 0;
+    }
+
+
+    /* Badge Tablet */
+
+    .badgeHeader {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .85rem;
+    }
+
+    .badgeIcon {
+        font-size: 4rem;
+    }
+
+    .barIcon {
+        width: 66px;
+        height: 64px;
+    }
+
+    .lockCircle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .lockIcon {
+        font-size: 2rem;
+    }
+
+    button.questBtn {
+        padding: 13px 17px;
+        font-size: 17px;
+    }
+
 }
