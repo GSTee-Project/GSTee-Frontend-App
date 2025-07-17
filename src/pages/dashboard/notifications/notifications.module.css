@@ -42,6 +42,11 @@
     padding: 20px 10px;
 }
 
+@media screen and (max-width: 576px) {
+    .page h3 {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1280px) {
     .page h3 {}
