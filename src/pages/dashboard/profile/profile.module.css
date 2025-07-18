@@ -53,12 +53,12 @@
   justify-content: space-between;
 }
 
-.nameInfo>div h3 {
+.nameInfo > div h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.nameInfo>div p {
+.nameInfo > div p {
   font-size: 16px;
   font-weight: 500;
   font-family: "Nunito";
@@ -169,7 +169,7 @@ button.add {
   border-radius: 50%;
 }
 
-.singleFriendStreak>div {
+.singleFriendStreak > div {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -343,7 +343,8 @@ img.streakImg {
 }
 
 /* --- Achievement Section ---  */
-.achievementsSection {}
+.achievementsSection {
+}
 
 .achievementsSection header {
   margin-bottom: 15px;
@@ -419,7 +420,7 @@ img.streakImg {
   border-radius: 10px;
 }
 
-.addFriendSection .container>div {
+.addFriendSection .container > div {
   padding: 20px;
   border-bottom: 1px solid #00000080;
   display: flex;
@@ -427,16 +428,16 @@ img.streakImg {
   justify-content: space-between;
 }
 
-.addFriendSection .container>div:last-child {
+.addFriendSection .container > div:last-child {
   border-bottom: none;
 }
 
-.addFriendSection .container>div h4 {
+.addFriendSection .container > div h4 {
   font-weight: 600;
   font-size: 20px;
 }
 
-.addFriendSection .container>div .arrowIcon {
+.addFriendSection .container > div .arrowIcon {
   font-size: 22px;
 }
 
@@ -532,7 +533,7 @@ img.streakImg {
     width: 20px;
   }
 
-  .singleFriendStreak>div {
+  .singleFriendStreak > div {
     display: flex;
     align-items: center;
     gap: 2px;
@@ -595,7 +596,7 @@ img.streakImg {
     margin-bottom: 10px;
   }
 
-  .imageContainer>img {
+  .imageContainer > img {
     width: 20px;
   }
 

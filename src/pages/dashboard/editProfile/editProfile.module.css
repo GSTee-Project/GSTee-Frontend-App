@@ -1,65 +1,76 @@
 .page h3 {
-    font-size: 28px;
-    font-weight: 700;
-    font-family: 'Nunito';
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Nunito";
 }
 
 .userIcon {
-    color: #00000061;
-    margin-top: 35px;
-    font-size: 130px;
+  color: #00000061;
+  margin-top: 35px;
+  font-size: 130px;
 }
 
 .form {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .form .formGroup {
-    font-family: 'Inter';
-    margin-bottom: 25px;
+  font-family: "Inter";
+  margin-bottom: 25px;
 }
 
 .formGroup label {
-    font-weight: 500;
-    font-size: 17px;
-    display: block;
-    margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .formGroup input {
-    padding: 15px 10px;
-    border-radius: 10px;
-    font-size: 17px;
-    width: 100%;
-    border: 1px solid #00000061;
-    font-family: 'Inter';
-    border-radius: 10px;
-    font-weight: 400;
-    outline: none;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  width: 100%;
+  border: 1px solid #00000061;
+  font-family: "Inter";
+  border-radius: 10px;
+  font-weight: 400;
+  outline: none;
 }
 
 .formGroup input:focus {
-    border: 1.5px solid var(--primary-color);
+  border: 1.5px solid var(--primary-color);
 }
 
 .form button {
-    margin-top: 20px;
-    margin-bottom: 25px;
-    width: 100%;
-    color: white;
-    background-color: var(--primary-color);
-    font-family: 'Inter';
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+  color: white;
+  background-color: var(--primary-color);
+  font-family: "Inter";
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 15px;
 }
 
 p.delete {
-    text-align: center;
-    color: #EA4335;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 17px;
+  text-align: center;
+  color: #ea4335;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    display: none;
+  }
+
+  .userIcon {
+    margin-top: 0;
+    font-size: 100px;
+  }
 }
