@@ -47,7 +47,7 @@ const ModeCard = ({ image, title, description, modeNo }) => {
         <button onClick={() => setOpen(true)}>Start Now</button>
       </div>
 
-      <ModalWrapper open={open} onClose={() => setOpen(false)} width='55%'>
+      <ModalWrapper open={open} onClose={() => setOpen(false)}>
         {modeNo === 1 && <QuickQuizContent />}
         {modeNo === 2 && <BattleModeContent />}
         {modeNo === 3 && <MemoryMatchContent />}
