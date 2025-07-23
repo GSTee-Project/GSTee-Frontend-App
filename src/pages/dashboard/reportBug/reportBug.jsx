@@ -36,7 +36,7 @@ const ReportBug = () => {
             onChange={handleInputChange}
             className={styles.formTextarea}
             placeholder="Describe the issue you encountered..."
-            rows={6}
+            rows={3}
           />
         </div>
 
