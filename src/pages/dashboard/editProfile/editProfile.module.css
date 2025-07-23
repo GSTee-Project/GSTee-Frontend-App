@@ -65,7 +65,7 @@ p.delete {
 }
 
 @media (max-width: 768px) {
-  h3 {
+  .page h3 {
     display: none;
   }
 
