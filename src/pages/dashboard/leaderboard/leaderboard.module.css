@@ -61,3 +61,24 @@
     border-radius: 10px;
     background-color: var(--primary-color);
 }
+
+/* --- Media Queries --- */
+@media(max-width:768px){
+    .leaderboard_overview{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .badge_notification{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px){
+    .badge_notification{
+        flex-direction: column;
+    }
+}
