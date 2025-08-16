@@ -56,7 +56,7 @@
     scrollbar-width: none;
 }
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
     .container {
         border: none;
         padding: 10px 0px 10px;
@@ -72,4 +72,60 @@
     .badge h3, .badge p {
         white-space: nowrap;
     }
+}*/
+
+/* --- Media Queries --- */
+@media(max-width:992px){
+    .header{
+        gap: 30px;
+    }
+
+    .header h3, .header span{
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        margin-bottom: 6em;
+    }
+
+}
+
+@media(max-width:576px){
+    .container{
+        padding: 30px 50px 10px;
+        margin-bottom: 1em;
+    }
+
+    .header{
+        gap: 50px;
+    }
+}
+
+@media(max-width:480px){
+    .container{
+        padding: 30px 40px 10px;
+    }
+
+    .header{
+        gap: 50px;
+    }
+}
+
+@media(max-width:380px){
+    .container{
+        padding: 30px 30px 10px;
+    }
+}
+
+@media(max-width:350px){
+    .header h3{
+        font-size: 1rem;
+    }
+
+    .header span{
+        font-size: 0.8rem;
+    }
+
 }

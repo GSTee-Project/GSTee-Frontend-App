@@ -51,8 +51,8 @@ const LeaderBoard = () => {
           <div>{switchLeaderboard()}</div>
         </section>
 
-        <section>
-          <div>
+        <section className={styles.badge_notification}>
+          <div className={styles.unlock_badges}>
             <UnlockBadges />
           </div>
           <div style={{marginTop: '30px'}}>
