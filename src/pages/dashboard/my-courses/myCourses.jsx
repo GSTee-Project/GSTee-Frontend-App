@@ -20,14 +20,14 @@ const MyCourses = () => {
     {
       id: 2,
       image: courseImg,
-      title: 'Use of English & communicaion skills I',
+      title: 'Computer Fundamentals',
       lessonNo: '15',
       hourNo: '15'
     },
     {
       id: 3,
       image: courseImg,
-      title: 'Use of English & communicaion skills II',
+      title: 'Computer Fundamentals',
       lessonNo: '15',
       hourNo: '15'
     },
@@ -44,14 +44,14 @@ const MyCourses = () => {
     {
       id: 5,
       image: courseImg,
-      title: 'Use of English & communicaion skills I',
+      title: 'Computer Fundamentals',
       lessonNo: '2/15',
       hourNo: '15'
     },
     {
       id: 6,
       image: courseImg,
-      title: 'Use of English & communicaion skills II',
+      title: 'Computer Fundamentals',
       lessonNo: '3/15',
       hourNo: '15'
     },
