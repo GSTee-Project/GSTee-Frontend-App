@@ -12,7 +12,7 @@ const BottomNav = () => {
 
     const location = useLocation();
 
-    const paths = ['/dashboard', '/dashboard/my-courses', '/dashboard/play-games', '/dashboard/levels&badges', '/dashboard/profile']
+    const paths = ['/dashboard', '/dashboard/courses', '/dashboard/play-games', '/dashboard/levels&badges', '/dashboard/profile']
 
     return (
         <div className={styles.bottomNav}>
