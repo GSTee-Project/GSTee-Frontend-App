@@ -195,19 +195,20 @@
     }
 
     .modalContent {
-        padding: 40px 20px;
+        padding: 40px 30px;
     }
 
     .modalContent img {
-        width: 130px;
+        width: 100px;
     }
 
     .modalContent h3 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 5px;
     }
 
     .modalContent p {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 20px;
     }
 
