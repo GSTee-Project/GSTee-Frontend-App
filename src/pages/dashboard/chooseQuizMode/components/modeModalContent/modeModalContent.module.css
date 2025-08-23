@@ -11,7 +11,7 @@
 }
 
 .content {
-    padding: 40px 15px;
+    padding: 40px 30px;
 }
 
 .header {
@@ -97,4 +97,9 @@
     margin: 10px auto 10px;
 }
 
+@media screen and (max-width: 500px) {
+    .content {
+        padding: 20px;
+    }
+}
 

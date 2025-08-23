@@ -5,13 +5,20 @@
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 25px));
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     margin-top: 30px;
     row-gap: 50px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+
+    .container {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .page {
         padding: 20px 15px;
     }
