@@ -1,0 +1,76 @@
+.page {
+    padding: 25px 30px;
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #0000000D;
+    border-radius: 16px;
+    padding: 30px 20px;
+}
+
+.containerHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.containerHeader h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.containerHeader p {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cardContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page {
+        padding: 20px 10px;
+    }
+
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .container {
+        margin-top: 20px;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .containerHeader h3 {
+        font-size: 20px;
+    }
+
+    .containerHeader p {
+        color: var(--primary-color);
+        font-size: 16px;
+    }
+}

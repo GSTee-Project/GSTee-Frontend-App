@@ -104,12 +104,19 @@ const CourseLesson = () => {
 
   return (
     <div className={styles.page}>
+
+      {/* --- VIEW --- */}
       <div className={styles.container}>
+
+        {/* --- HEADER --- */}
         <header>
           <MdArrowBack className={styles.back} onClick={navigateBack} />
           <h3>Definition of Computer</h3>
         </header>
+
+        {/* --- MAIN CONTENT ---  */}
         <div className={styles.contentBox}>
+          {/* --- TOP CONTENT --- */}
           <div className={styles.topCornerBox}>
             <HiMiniSpeakerWave size={26} color={'#00000080'} style={{ cursor: 'pointer' }} />
             <div className={styles.heartBox}>
@@ -117,22 +124,25 @@ const CourseLesson = () => {
               <FaHeart size={20} color={'#EA4335'} />
             </div>
           </div>
+          {/* --- HEADING & TEXT --- */}
           <h4>{slides[currentSlide - 1].heading}</h4>
           <p>{slides[currentSlide - 1].text}</p>
         </div>
 
+        {/* --- BOTTOM NAVIGATION (prev and next) --- */}
         <div className={styles.bottomNavigation}>
-          <div className={`${styles.arrowBox} ${currentSlide === 1 && styles.disabled}`} onClick={decrementSlide}>
+          <button className={`${styles.arrowBox} ${currentSlide === 1 && styles.disabled}`} onClick={decrementSlide}>
             <IoArrowBack className={styles.arrowIcon} />
-          </div>
+          </button>
           <p>{`${currentSlide}/${slides.length}`}</p>
-          <div className={`${styles.arrowBox} ${currentSlide === slides.length && styles.finish}`} onClick={currentSlide === slides.length ? openFinishModal : incrementSlide}>
+          <button className={`${styles.arrowBox} ${currentSlide === slides.length && styles.finish}`} onClick={currentSlide === slides.length ? openFinishModal : incrementSlide}>
             {currentSlide === slides.length ? 'Finish' : <IoArrowForward className={styles.arrowIcon} />}
-          </div>
+          </button>
         </div>
       </div>
 
-      <ModalWrapper open={openModal} onClose={() => setOpenModal(false)} width='600px' showCloseBtn={false}>
+      {/* --- MODAL AFTER COMPLETION --- */}
+      <ModalWrapper open={openModal} onClose={() => setOpenModal(false)} width='600px'>
         <div className={styles.modalContent}>
           <img src={celebrationImg} alt="" />
           <h3>Congratuations!</h3>
